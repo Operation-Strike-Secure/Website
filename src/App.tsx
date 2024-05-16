@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+import "./App.css";
+
+import { AppRouter } from "./Router/AppRouter";
+import { AppContext } from "./Context/AppContext";
+import { AppLocation } from "./Context/AppContext";
+
+function App(): JSX.Element {
+  const [lang, setLang] = useState({
+    current: "fr-FR",
+    default: "fr-FR",
+  });
+
+  const appDefaultContext = {
+    appLang: { lang, setLang },
+    appLoc: "en-US" as AppLocation,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={appDefaultContext}>
+      <AppRouter />
+    </AppContext.Provider>
   );
 }
 

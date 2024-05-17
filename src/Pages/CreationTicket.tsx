@@ -1,44 +1,37 @@
-import React, { useState } from 'react';
+import React from "react";
+import "./CreationTicket.css";
+import { useNavigate } from "react-router-dom";
+
+import Logo from '../assets/Logo.svg';
 
 export const CreationTicket = () => {
-    const [title, setTitle] = useState('');
-    const [text, setText] = useState('');
+  const navigate = useNavigate();
 
-    const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setTitle(e.target.value);
-    };
+  const handleCreateTicketClick = () => {
+    navigate("/creation-ticket");
+  };
 
-    const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setText(e.target.value);
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Ajoutez ici la logique pour créer le ticket avec le titre et le texte
-        console.log('Ticket créé:', title, text);
-        // Réinitialisez les champs après la création du ticket
-        setTitle('');
-        setText('');
-    };
-
-    return (
-        <div>
-            <h1>Création de ticket</h1>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Titre:
-                    <input type="text" value={title} onChange={handleTitleChange} />
-                </label>
-                <br />
-                <label>
-                    Texte:
-                    <textarea value={text} onChange={handleTextChange} />
-                </label>
-                <br />
-                <button type="submit">Créer le ticket</button>
-            </form>
+  return (
+    <div className="home-page">
+      <div className="container">
+        <div className="rectangle-blanc">
+          <img src={Logo} alt="Logo" className="left-image" />
+          <a href="ticket-cour" className="lien">Ticket en cours</a>
+          <div className="center-text">Mes tickets</div>
+          <button className="create-ticket-button" onClick={handleCreateTicketClick}>Créer un ticket</button>
         </div>
-    );
+        <div className="rectangle-text">
+            <div className="rec-titre-ticket">
+                <input type="text" className="titre-ticket" placeholder="Ajouter un titre" />
+            </div>
+            <div className="rectangle-ecriture">
+                <textarea className="text-rectangle-ecriture" placeholder="Composer votre message" />
+            </div>
+            <button className="send-new-message">Publier</button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default CreationTicket;

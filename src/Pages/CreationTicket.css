@@ -1,0 +1,74 @@
+.rectangle-text {
+    width: calc(100% - 200px);
+    max-width: 1850px;
+    height: 540px;
+    left: 100px;
+    top: 190px;
+    background-color: rgba(217, 217, 217, 0.7);
+    position: absolute;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Pour centrer horizontalement le contenu */
+}
+
+.rec-titre-ticket {
+    margin-left: 25px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Pour centrer horizontalement */
+    width: 310px;
+    height: 37px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    align-self: flex-start; /* Pour centrer verticalement */
+}
+
+.titre-ticket {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    text-align: center;
+}
+
+.rectangle-ecriture {
+    width: calc(100% - 150px);
+    max-width: 1850px;
+    height: 380px;
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    top: 100px;
+}
+
+.text-rectangle-ecriture {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    margin: 10px; /* Ajout de marges pour l'espace autour du textarea */
+    resize: none; /* Pour désactiver le redimensionnement du textarea */
+    width: calc(100% - 20px); /* Largeur du textarea moins les marges */
+    height: calc(100% - 20px); /* Hauteur du textarea moins les marges */
+}
+
+.send-new-message {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 47px;
+    background: linear-gradient(45deg, #568893, #000000);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}

@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { ErrorPage } from "../Pages/ErrorPage";
 import { HomePage } from "../Pages/HomePage";
+import { TicketEnCour } from "../Pages/TicketEnCour"
+import { CreationTicket } from "../Pages/CreationTicket"
+import { StatPage } from "../Pages/StatPage"
 
 export const BrowserRouter = createBrowserRouter([
   // Home page route
@@ -14,5 +17,23 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "*",
     element: <ErrorPage />,
+  },
+  // Ticket en cours page route
+  {
+    path: "/ticket-cour",
+    element: <TicketEnCour />,
+    errorElement: <ErrorPage />,
+  },
+  // Creation ticket page route
+  {
+    path: "/creation-ticket",
+    element: <CreationTicket />,
+    errorElement: <ErrorPage />,
+  },
+  // Stat page route
+  {
+    path: "/statistiques",
+    element: <StatPage />,
+    errorElement: <ErrorPage />,
   },
 ]);

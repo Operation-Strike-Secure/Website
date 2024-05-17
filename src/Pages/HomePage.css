@@ -15,3 +15,175 @@
   align-items: center;
   min-height: 100vh;
 }
+
+.rectangle-blanc {
+  width: calc(100% - 248px);
+  max-width: 1825px;
+  height: 70px;
+  left: 124px;
+  top: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .rectangle-blanc {
+    width: calc(100% - 10px);
+    left: 5px;
+  }
+}
+
+.left-image {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+.lien {
+  font-family: "Bolt-italic", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.center-text {
+  font-family: "Bolt-italic", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  margin-left: -250px;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.create-ticket-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 47px;
+  background: linear-gradient(45deg, #568893, #000000);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.search-bar {
+  margin-top: 40px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  width: 310px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+.search-icon {
+  height: 34px;
+  margin-left: -30px
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.carre-gauche {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  width: 380px; /* Largeur de 192px */
+  height: 250px; /* Hauteur de 18px */
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
+  border-radius: 50px; /* Bordure arrondie */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+}
+
+.text-gauche {
+  font-family: "Bolt-italic", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  font-style: italic;
+  text-decoration: underline;
+  position: absolute; /* Changement de position en absolue */
+  top: 10px; /* Ajustement de la position verticale */
+  left: 140px; /* Ajustement de la position horizontale */
+}
+
+.button-logo {
+  width: auto; /* La largeur s'ajustera automatiquement à la taille de l'image */
+  height: auto; /* La hauteur s'ajustera automatiquement à la taille de l'image */
+  max-height: 40px; /* Limite la hauteur maximale du bouton */
+  object-fit: contain; /* Ajuste l'image pour être contenue dans le bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  background: none; /* Supprime le fond par défaut du bouton */
+  cursor: pointer; /* Change le curseur au survol */
+  padding: 0; /* Supprime le padding pour que l'image remplisse entièrement le bouton */
+  margin-left: 140px;
+  margin-top: -40px;
+}
+
+.carre-droite {
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Ajuste la position à droite */
+  margin-right: 140px; /* Ajuste la marge à droite */
+  margin-bottom: 20px;
+  width: 380px; /* Largeur de 192px */
+  height: 250px; /* Hauteur de 18px */
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
+  border-radius: 50px; /* Bordure arrondie */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+}
+
+.text-droite {
+  font-family: "Bolt-italic", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  font-style: italic;
+  text-decoration: underline;
+  position: absolute; /* Changement de position en absolue */
+  top: 10px; /* Ajustement de la position verticale */
+  left: 100px; /* Ajustement de la position horizontale */
+}
+
+.button-statistiques {
+  width: auto; /* La largeur s'ajustera automatiquement à la taille de l'image */
+  height: auto; /* La hauteur s'ajustera automatiquement à la taille de l'image */
+  max-height: 40px; /* Limite la hauteur maximale du bouton */
+  object-fit: contain; /* Ajuste l'image pour être contenue dans le bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  background: none; /* Supprime le fond par défaut du bouton */
+  cursor: pointer; /* Change le curseur au survol */
+  padding: 0; /* Supprime le padding pour que l'image remplisse entièrement le bouton */
+  margin-left: 140px;
+  margin-top: -40px;
+}

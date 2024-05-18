@@ -14,50 +14,58 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px; /* Ajoute du padding pour éviter que les éléments touchent les bords */
 }
 
 .rectangle-blanc {
   width: calc(100% - 248px);
   max-width: 1825px;
   height: 70px;
-  left: 124px;
-  top: 40px;
+  top: 0; /* Positionne le rectangle en haut */
+  margin-top: 15px;
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Centre horizontalement */
   background-color: rgba(255, 255, 255, 0.8);
-  position: absolute;
+  position: fixed; /* Fixe la position en haut de la page */
   border-radius: 30px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
+  z-index: 1000; /* Assure que le rectangle reste au-dessus des autres éléments */
 }
 
 @media screen and (max-width: 600px) {
   .rectangle-blanc {
-    width: calc(100% - 10px);
-    left: 5px;
+    width: calc(100% - 20px); /* Réduit la largeur sur petits écrans */
+    left: 10px;
+    transform: translateX(0); /* Réinitialise la transformation pour petits écrans */
   }
 }
 
+
 .button-left-image {
-  width: auto; /* La largeur s'ajustera automatiquement à la taille de l'image */
-  height: auto; /* La hauteur s'ajustera automatiquement à la taille de l'image */
-  object-fit: contain; /* Ajuste l'image pour être contenue dans le bouton */
-  border: none; /* Supprime la bordure par défaut du bouton */
-  background: none; /* Supprime le fond par défaut du bouton */
-  cursor: pointer; /* Change le curseur au survol */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .left-image {
-  width: 70px;
+  width: 70px; /* Réduit la taille de l'image sur petits écrans */
   height: 70px;
   margin-left: 20px;
 }
 
 .lien {
   font-family: "Bolt-italic", sans-serif;
-  font-size: 25px;
+  font-size: 1.2em; /* Utilise des unités relatives pour la taille du texte */
+  /* font-size: 25px; */
   font-weight: 500;
   color: #000000;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: auto;
   font-style: italic;
   border: none;
@@ -67,7 +75,8 @@
 
 .center-text {
   font-family: "Bolt-italic", sans-serif;
-  font-size: 25px;
+  font-size: 1.2em;
+  /* font-size: 25px; */
   font-weight: 500;
   color: #000000;
   text-decoration: none;
@@ -84,7 +93,7 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  padding: 5px 47px;
+  padding: 5px 47px; /* Réduit le padding pour petits écrans */
   background: linear-gradient(45deg, #568893, #000000);
   color: white;
   border: none;
@@ -94,11 +103,13 @@
 }
 
 .search-bar {
-  margin-top: 40px;
+  margin-top: -100px;
   margin-left: 25px;
   display: flex;
   align-items: center;
-  width: 310px;
+  width: 90%; /* Réduit la largeur sur petits écrans */
+  /* width: 310px; */
+  max-width: 310px;
   height: 37px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 30px;
@@ -108,7 +119,7 @@
 
 .search-icon {
   height: 34px;
-  margin-left: -30px
+  margin-left: -30px;
 }
 
 .search-input {
@@ -119,86 +130,121 @@
   font-size: 16px;
 }
 
-.carre-gauche {
+.carre-gauche, .carre-droite {
   position: absolute;
   bottom: 0;
-  left: 0;
-  margin-left: 140px;
-  margin-bottom: 20px;
-  width: 380px; /* Largeur de 192px */
-  height: 250px; /* Hauteur de 18px */
-  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
-  border-radius: 50px; /* Bordure arrondie */
+  margin: 30px;
+  width: 380px;
+  max-width: 90%; /* Assure que la largeur ne dépasse pas 90% */
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  padding: 0 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
 }
 
-.text-gauche {
-  font-family: "Bolt-italic", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  color: #000000;
-  text-decoration: none;
-  font-style: italic;
-  text-decoration: underline;
-  position: absolute; /* Changement de position en absolue */
-  top: 10px; /* Ajustement de la position verticale */
-  left: 140px; /* Ajustement de la position horizontale */
+/* Ajustements pour les écrans de taille moyenne */
+@media screen and (max-width: 1200px) {
+  .carre-gauche, .carre-droite {
+    width: 300px;
+    height: 180px;
+  }
 }
 
-.button-logo {
-  width: auto; /* La largeur s'ajustera automatiquement à la taille de l'image */
-  height: auto; /* La hauteur s'ajustera automatiquement à la taille de l'image */
-  max-height: 40px; /* Limite la hauteur maximale du bouton */
-  object-fit: contain; /* Ajuste l'image pour être contenue dans le bouton */
-  border: none; /* Supprime la bordure par défaut du bouton */
-  background: none; /* Supprime le fond par défaut du bouton */
-  cursor: pointer; /* Change le curseur au survol */
-  padding: 0; /* Supprime le padding pour que l'image remplisse entièrement le bouton */
-  margin-left: 140px;
-  margin-top: -40px;
+/* Ajustements pour les écrans de petite taille */
+@media screen and (max-width: 960px) {
+  .carre-gauche, .carre-droite {
+    width: 250px;
+    height: 160px;
+  }
+}
+
+/* Ajustements pour les écrans de petite taille */
+@media screen and (max-width: 860px) {
+  .carre-gauche, .carre-droite {
+    width: 220px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carre-gauche, .carre-droite {
+    width: 180px;
+    height: 90px;
+  }
+}
+
+.carre-gauche {
+  left: 0;
+  margin-left: 30px;
 }
 
 .carre-droite {
-  position: absolute;
-  bottom: 0;
-  right: 0; /* Ajuste la position à droite */
-  margin-right: 140px; /* Ajuste la marge à droite */
-  margin-bottom: 20px;
-  width: 380px; /* Largeur de 192px */
-  height: 250px; /* Hauteur de 18px */
-  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
-  border-radius: 50px; /* Bordure arrondie */
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+  right: 0;
+  margin-right: 30px;
 }
 
-.text-droite {
+.text-gauche, .text-droite {
   font-family: "Bolt-italic", sans-serif;
-  font-size: 25px;
+  font-size: 1.2em;
   font-weight: 500;
   color: #000000;
   text-decoration: none;
   font-style: italic;
   text-decoration: underline;
-  position: absolute; /* Changement de position en absolue */
-  top: 10px; /* Ajustement de la position verticale */
-  left: 100px; /* Ajustement de la position horizontale */
+  margin: 10px 0;
 }
 
-.button-statistiques {
-  width: auto; /* La largeur s'ajustera automatiquement à la taille de l'image */
-  height: auto; /* La hauteur s'ajustera automatiquement à la taille de l'image */
-  max-height: 40px; /* Limite la hauteur maximale du bouton */
-  object-fit: contain; /* Ajuste l'image pour être contenue dans le bouton */
-  border: none; /* Supprime la bordure par défaut du bouton */
-  background: none; /* Supprime le fond par défaut du bouton */
-  cursor: pointer; /* Change le curseur au survol */
-  padding: 0; /* Supprime le padding pour que l'image remplisse entièrement le bouton */
-  margin-left: 140px;
-  margin-top: -40px;
+.button-logo, .button-statistiques {
+  width: auto;
+  height: auto;
+  max-height: 40px;
+  object-fit: contain;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* Ajustements pour les écrans de taille moyenne */
+@media screen and (max-width: 1200px) {
+  .button-logo, .button-statistiques {
+    height: 35px; /* Réduit la hauteur maximale */
+  }
+}
+
+/* Ajustements pour les écrans de taille moyenne */
+@media screen and (max-width: 960px) {
+  .button-logo, .button-statistiques {
+    max-height: 20px; /* Réduit la hauteur maximale */
+  }
+}
+
+/* Ajustements pour les écrans de taille moyenne */
+@media screen and (max-width: 860px) {
+  .button-logo, .button-statistiques {
+    max-height: 25px; /* Réduit la hauteur maximale */
+  }
+}
+
+/* Ajustements pour les petits écrans */
+@media screen and (max-width: 800px) {
+  .button-logo, .button-statistiques {
+    max-height: 20px; /* Réduit la hauteur maximale */
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .carre-gauche {
+    left: 0;
+    margin-left: 140px;
+  }
+  .carre-droite {
+    right: 0;
+    margin-right: 140px;
+  }
 }

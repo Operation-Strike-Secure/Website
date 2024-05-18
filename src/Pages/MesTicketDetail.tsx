@@ -3,11 +3,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReply } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import "./TicketDetail.css";
+import "./MesTicketDetail.css";
 
 import Logo from '../assets/Logo.svg';
 
-export const TicketDetail = () => {
+export const MesTicketDetail = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { title, text } = location.state;
@@ -69,8 +69,8 @@ export const TicketDetail = () => {
           <button className="button-left-image" onClick={handleHomeClick}>
             <img src={Logo} alt="Logo" className="left-image" />
           </button>
-          <button className="lien-actif" onClick={handleTicketCourClick}>Ticket en cours</button>
-          <button className="center-text" onClick={handleMesTicketsClick}>Mes tickets</button>
+          <button className="lien" onClick={handleTicketCourClick}>Ticket en cours</button>
+          <button className="center-text-actif" onClick={handleMesTicketsClick}>Mes tickets</button>
           <button className="create-ticket-button" onClick={handleCreateTicketClick}>Créer un ticket</button>
         </div>
         <div className="rectangle-text-2">
@@ -130,4 +130,4 @@ export const TicketDetail = () => {
   );
 };
 
-export default TicketDetail;
+export default MesTicketDetail;

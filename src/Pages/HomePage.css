@@ -36,6 +36,15 @@
   }
 }
 
+.button-left-image {
+  width: auto; /* La largeur s'ajustera automatiquement à la taille de l'image */
+  height: auto; /* La hauteur s'ajustera automatiquement à la taille de l'image */
+  object-fit: contain; /* Ajuste l'image pour être contenue dans le bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  background: none; /* Supprime le fond par défaut du bouton */
+  cursor: pointer; /* Change le curseur au survol */
+}
+
 .left-image {
   width: 70px;
   height: 70px;
@@ -51,6 +60,9 @@
   margin-left: 20px;
   margin-right: auto;
   font-style: italic;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .center-text {
@@ -62,6 +74,9 @@
   margin-left: -250px;
   margin-right: auto;
   font-style: italic;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .create-ticket-button {

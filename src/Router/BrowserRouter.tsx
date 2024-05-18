@@ -6,6 +6,9 @@ import { TicketEnCour } from "../Pages/TicketEnCour"
 import { CreationTicket } from "../Pages/CreationTicket"
 import { StatPage } from "../Pages/StatPage"
 import { TicketDetail } from '../Pages/TicketDetail';
+import { MesTickets } from '../Pages/MesTickets';
+import { MesTicketDetail } from '../Pages/MesTicketDetail';
+
 
 export const BrowserRouter = createBrowserRouter([
   // Home page route
@@ -41,6 +44,18 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "/ticket-detail/:id",
     element: <TicketDetail />,
+    errorElement: <ErrorPage />,
+  },
+  // Mes tickets page route
+  {
+    path: "/mes-tickets",
+    element: <MesTickets />,
+    errorElement: <ErrorPage />,
+  },
+  // Mes ticket detail page route
+  {
+    path: "/mes-ticket-detail/:id",
+    element: <MesTicketDetail />,
     errorElement: <ErrorPage />,
   },
 ]);

@@ -7,17 +7,31 @@ import Logo from '../assets/Logo.svg';
 export const CreationTicket = () => {
   const navigate = useNavigate();
 
+  const handleHomeClick = () => {
+    navigate("/");
+  };
+
   const handleCreateTicketClick = () => {
     navigate("/creation-ticket");
+  };
+
+  const handleTicketCourClick = () => {
+    navigate("/ticket-cour");
+  };
+
+  const handleMesTicketsClick = () => {
+    navigate("/mes-tickets");
   };
 
   return (
     <div className="home-page">
       <div className="container">
         <div className="rectangle-blanc">
-          <img src={Logo} alt="Logo" className="left-image" />
-          <a href="ticket-cour" className="lien">Ticket en cours</a>
-          <div className="center-text">Mes tickets</div>
+          <button className="button-left-image" onClick={handleHomeClick}>
+            <img src={Logo} alt="Logo" className="left-image" />
+          </button>
+          <button className="lien" onClick={handleTicketCourClick}>Ticket en cours</button>
+          <button className="center-text" onClick={handleMesTicketsClick}>Mes tickets</button>
           <button className="create-ticket-button" onClick={handleCreateTicketClick}>Créer un ticket</button>
         </div>
         <div className="rectangle-text">

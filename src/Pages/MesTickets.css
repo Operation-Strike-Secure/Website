@@ -1,0 +1,14 @@
+.center-text-actif {
+    font-family: "Bolt-italic", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    margin-left: -250px;
+    margin-right: auto;
+    font-style: italic;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+  }

@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Chart, registerables } from 'chart.js';
+import { useNavigate } from "react-router-dom";
+
 import "./StatPage.css";
 
 import Logo from '../assets/Logo.svg';
@@ -7,10 +9,16 @@ import Logo from '../assets/Logo.svg';
 Chart.register(...registerables);
 
 export const StatPage: React.FC = () => {
+  const navigate = useNavigate();
+
   const chart1Ref = useRef<HTMLCanvasElement>(null);
   const chart2Ref = useRef<HTMLCanvasElement>(null);
   const chart1Instance = useRef<Chart | null>(null);
   const chart2Instance = useRef<Chart | null>(null);
+
+  const handleHomeClick = () => {
+    navigate("/");
+  };
 
   useEffect(() => {
     const chartData1 = {
@@ -71,7 +79,9 @@ export const StatPage: React.FC = () => {
       <div className="stat-page">
         <div className="container">
           <div className="rectangle-gris">
-            <img src={Logo} alt="Logo" className="left-image" />
+            <button className="button-left-image" onClick={handleHomeClick}>
+             <img src={Logo} alt="Logo" className="left-image" />
+            </button>
             <div className="nom">O.S.S</div>
             <div className="titre-stats">Statistiques du jeu</div>
           </div>

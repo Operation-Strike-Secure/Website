@@ -5,6 +5,7 @@ import { HomePage } from "../Pages/HomePage";
 import { TicketEnCour } from "../Pages/TicketEnCour"
 import { CreationTicket } from "../Pages/CreationTicket"
 import { StatPage } from "../Pages/StatPage"
+import { TicketDetail } from '../Pages/TicketDetail';
 
 export const BrowserRouter = createBrowserRouter([
   // Home page route
@@ -34,6 +35,12 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "/statistiques",
     element: <StatPage />,
+    errorElement: <ErrorPage />,
+  },
+  // Ticket detail page route
+  {
+    path: "/ticket-detail/:id",
+    element: <TicketDetail />,
     errorElement: <ErrorPage />,
   },
 ]);

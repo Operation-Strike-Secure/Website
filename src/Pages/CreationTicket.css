@@ -1,30 +1,30 @@
 .rectangle-text {
-    width: calc(100% - 200px);
+    width: calc(100% - 20%);
     max-width: 1850px;
-    height: 540px;
-    left: 100px;
-    top: 190px;
+    height: 70vh;
+    left: 10%;
+    top: 20vh;
     background-color: rgba(217, 217, 217, 0.7);
     position: absolute;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Pour centrer horizontalement le contenu */
+    justify-content: center;
 }
 
 .rec-titre-ticket {
-    margin-left: 25px;
-    margin-top: 40px;
+    margin-left: 3%;
+    margin-top: 4%;
     display: flex;
     align-items: center;
-    justify-content: center; /* Pour centrer horizontalement */
-    width: 310px;
-    height: 37px;
+    justify-content: center;
+    width: 20%;
+    height: 5vh;
     background-color: rgba(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0 20px;
-    align-self: flex-start; /* Pour centrer verticalement */
+    padding: 0 2%;
+    align-self: flex-start;
 }
 
 .titre-ticket {
@@ -37,16 +37,17 @@
 }
 
 .rectangle-ecriture {
-    width: calc(100% - 150px);
+    width: calc(100% - 15%);
     max-width: 1850px;
-    height: 380px;
+    height: 40vh;
     background-color: rgba(255, 255, 255);
     position: absolute;
     border-radius: 30px;
     display: flex;
     align-items: center;
     margin: auto;
-    top: 100px;
+    top: 40vh;
+    transform: translateY(-50%);
 }
 
 .text-rectangle-ecriture {
@@ -55,17 +56,17 @@
     outline: none;
     background: transparent;
     font-size: 16px;
-    margin: 10px; /* Ajout de marges pour l'espace autour du textarea */
-    resize: none; /* Pour désactiver le redimensionnement du textarea */
-    width: calc(100% - 20px); /* Largeur du textarea moins les marges */
-    height: calc(100% - 20px); /* Hauteur du textarea moins les marges */
+    margin: 1%;
+    resize: none;
+    width: calc(100% - 2%);
+    height: calc(100% - 2%);
 }
 
 .send-new-message {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 5px 47px;
+    bottom: 3vh;
+    right: 5vw;
+    padding: 1vh 4vw;
     background: linear-gradient(45deg, #568893, #000000);
     color: white;
     border: none;

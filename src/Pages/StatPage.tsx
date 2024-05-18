@@ -3,6 +3,7 @@ import { Chart, registerables } from 'chart.js';
 import { useNavigate } from "react-router-dom";
 
 import "./StatPage.css";
+import "./Design.css";
 
 import Logo from '../assets/Logo.svg';
 

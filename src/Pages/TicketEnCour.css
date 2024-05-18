@@ -1,23 +1,12 @@
-.lien-actif {
-  font-family: "Bolt-italic", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  color: #000000;
-  text-decoration: none;
-  margin-left: 20px;
-  margin-right: auto;
-  font-style: italic;
-  text-decoration: underline;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
+/* Styles généraux */
 
-  .rectangle-text-2 {
+
+.rectangle-text-2 {
   width: calc(100% - 200px);
   max-width: 1850px;
   height: 540px;
-  left: 100px;
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%);
   top: 190px;
   background-color: rgba(217, 217, 217, 0.7);
   position: absolute;
@@ -28,8 +17,7 @@
   justify-content: flex-start;
   padding: 20px;
   gap: 20px;
-
-  max-height: 540px; /* Définissez la hauteur maximale souhaitée */
+  max-height: 540px;
   overflow-y: auto;
 }
 
@@ -52,7 +40,7 @@
 
 .ticket-title {
   margin: 0;
-  font-size: 18px;
+  font-size: 2vw; /* Utilisation d'unités de viewport pour la taille de la police */
   font-weight: bold;
   color: #000000;
   text-decoration: underline;
@@ -60,6 +48,91 @@
 
 .ticket-text {
   margin: 5px 0 0;
-  font-size: 14px;
+  font-size: 1.5vw; /* Utilisation d'unités de viewport pour la taille de la police */
   color: #000000;
+}
+
+/* Ajustements pour les écrans de taille moyenne */
+@media screen and (max-width: 1200px) {
+  .lien-actif {
+    font-size: 2.5vw;
+    margin-left: 3vw;
+  }
+
+  .rectangle-text-2 {
+    width: calc(100% - 150px);
+    height: auto;
+    padding: 15px;
+  }
+
+  .rectangle-mes-tickets {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .ticket-title {
+    font-size: 2.5vw;
+  }
+
+  .ticket-text {
+    font-size: 2vw;
+  }
+}
+
+/* Ajustements pour les petits écrans */
+@media screen and (max-width: 800px) {
+  .lien-actif {
+    font-size: 3vw;
+    margin-left: 5vw;
+  }
+
+  .rectangle-text-2 {
+    width: calc(100% - 100px);
+    height: auto;
+    padding: 10px;
+  }
+
+  .rectangle-mes-tickets {
+    width: calc(100% - 50px);
+    height: auto;
+    padding: 8px 10px;
+    margin-top: 10px;
+  }
+
+  .ticket-title {
+    font-size: 3vw;
+  }
+
+  .ticket-text {
+    font-size: 2.5vw;
+  }
+}
+
+/* Ajustements pour les très petits écrans */
+@media screen and (max-width: 600px) {
+  .lien-actif {
+    font-size: 4vw;
+    margin-left: 5vw;
+  }
+
+  .rectangle-text-2 {
+    width: calc(100% - 50px);
+    height: auto;
+    padding: 5px;
+  }
+
+  .rectangle-mes-tickets {
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+
+  .ticket-title {
+    font-size: 4vw;
+  }
+
+  .ticket-text {
+    font-size: 3vw;
+  }
 }

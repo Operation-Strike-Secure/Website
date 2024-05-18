@@ -1,0 +1,33 @@
+.home-page {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/FOND.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px; /* Ajoute du padding pour éviter que les éléments touchent les bords */
+}
+
+.lien-actif {
+  font-family: "Bolt-italic", sans-serif;
+  font-size: 2vw; /* Utilisation d'unités de viewport pour la taille de la police */
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 2vw; /* Utilisation d'unités de viewport pour les marges */
+  margin-right: auto;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

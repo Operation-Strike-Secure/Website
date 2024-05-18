@@ -1,5 +1,6 @@
 import React from "react";
 import "./TicketEnCour.css";
+import "./Design.css";
 import { useNavigate } from "react-router-dom";
 
 import Logo from '../assets/Logo.svg';

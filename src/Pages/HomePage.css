@@ -1,21 +1,4 @@
-.home-page {
-  margin: 0;
-  padding: 0;
-  background-image: url("../assets/FOND.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px; /* Ajoute du padding pour éviter que les éléments touchent les bords */
-}
 
 .rectangle-blanc {
   width: calc(100% - 248px);

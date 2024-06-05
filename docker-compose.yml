@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "3000:3000"
+      - "5678:3000"
     command: npm run start
 
   nginx:

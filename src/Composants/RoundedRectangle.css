@@ -1,0 +1,30 @@
+.rounded-rectangle {
+  margin-top: 90px;
+  width: 90%;
+  max-width: 1161px;
+  height: 70vh;
+  background-color: rgba(43, 51, 65, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 1200px) {
+  .rounded-rectangle {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rounded-rectangle {
+    width: 80%;
+    max-width: none;
+    height: 60vh;
+    margin-top: 30px;
+  }
+}

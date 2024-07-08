@@ -6,7 +6,6 @@
 }
 
 .filters {
-  /* color: #7C90AF; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +23,13 @@
 
 .filter-button.selected .filter-text {
   color: rgba(232, 163, 130, 1);
+}
+
+.filterable-rectangle {
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  height: 100%; /* Ajuster la hauteur au besoin */
 }
 
 @media (max-width: 768px) {

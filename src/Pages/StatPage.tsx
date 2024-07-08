@@ -1,7 +1,7 @@
 import React from "react";
 
-import BackgroundImage from '../Composants/BackgroundImage';
-import Navbar from '../Composants/Navbar';
+import BackgroundImage from '../Composants/All Pages/BackgroundImage';
+import Navbar from '../Composants/All Pages/Navbar';
 
 import backgroundImage from '../assets/Fond.png';
 import logo from '../assets/Logo.svg';

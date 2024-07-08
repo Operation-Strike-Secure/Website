@@ -1,0 +1,21 @@
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.status-badge.repondu {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+.status-badge.en-attente {
+  color: #C09D68;
+}
+
+.status-badge.ferme {
+  color: #3B343E;
+}

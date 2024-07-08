@@ -1,5 +1,5 @@
 import React from 'react';
-import TextComponentBlue from './ClicTextComponent';
+import TextComponentBlue from '../Text/ClicTextComponent';
 
 interface FilterButtonProps {
   selected: boolean;

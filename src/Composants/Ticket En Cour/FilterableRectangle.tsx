@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './FilterableRectangle.css';
-import RoundedRectangle from './RoundedRectangle';
 import FilterButton from './FilterButton';
 
 const FilterableRectangle: React.FC = () => {
@@ -12,7 +11,6 @@ const FilterableRectangle: React.FC = () => {
 
   return (
     <div className="filterable-rectangle">
-      <RoundedRectangle>
         <div className="filters">
           <FilterButton
             index={0}
@@ -43,7 +41,6 @@ const FilterableRectangle: React.FC = () => {
             FERMÉ
           </FilterButton>
         </div>
-      </RoundedRectangle>
     </div>
   );
 };

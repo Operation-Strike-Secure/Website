@@ -1,4 +1,4 @@
-.status-badge {
+/* .status-badge {
   padding: 5px 10px;
   border-radius: 4px;
 }
@@ -18,4 +18,42 @@
 
 .status-badge.ferme {
   color: #3B343E;
+} */
+
+
+.status-badge {
+  display: inline-flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+  padding: 1vh 1vw; /* Utilisation de vh et vw pour des paddings relatifs */
+  border-radius: 4px;
+}
+
+.status-badge.repondu {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5vh 3vw; /* Utilisation de vh et vw pour des paddings relatifs */
+  border-radius: 30px;
+}
+
+.status-badge.en-attente {
+  color: #C09D68;
+}
+
+.status-badge.ferme {
+  color: #3B343E;
+}
+
+/* Styles spécifiques pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
+  .status-badge {
+    padding: 0.5vh 1vw; /* Réduction du padding pour les petits écrans */
+  }
+
+  .status-badge.repondu {
+    padding: 0.3vh 2vw; /* Utilisation de vh et vw pour des paddings relatifs */
+    border-radius: 20px; /* Ajustement de la bordure arrondie */
+  }
 }

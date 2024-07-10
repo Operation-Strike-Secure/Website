@@ -1,4 +1,4 @@
-.button-new-ticket {
+/* .button-new-ticket {
   background-color: #7c90af;
   border-radius: 50px;
   width: 160px;
@@ -22,33 +22,42 @@
 
 .button-new-ticket:hover {
   opacity: 0.8;
+} */
+
+.button-new-ticket {
+  background-color: #7c90af;
+  border-radius: 50px;
+  width: 10vw; /* Utilisation de vw pour une largeur relative */
+  max-width: 160px; /* Largeur maximale pour les grands écrans */
+  height: 5vh; /* Utilisation de vh pour une hauteur relative */
+  max-height: 30px; /* Hauteur maximale pour les grands écrans */
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem; /* Utilisation de rem pour une taille de police relative */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fbf8ed;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 4vw;
+  left: 90%;
+  transform: translateX(-50%);
 }
 
-@media (max-width: 1200px) {
-  .button-new-ticket {
-    width: 140px;
-    font-size: 16px;
-  }
+.button-new-ticket:hover {
+  opacity: 0.8;
 }
 
-@media (max-width: 992px) {
+/* Styles spécifiques pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
   .button-new-ticket {
-    width: 120px;
-    font-size: 14px;
-
-  }
-}
-
-@media (max-width: 768px) {
-  .button-new-ticket {
-    width: 100px;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 576px) {
-  .button-new-ticket {
-    width: 80px;
-    font-size: 10px;
+    width: 5vw; /* Largeur relative plus grande sur mobile */
+    max-width: none; /* Enlève la limite de largeur */
+    height: 3vh; /* Hauteur relative plus grande sur mobile */
+    max-height: none; /* Enlève la limite de hauteur */
+    top: 2vw;
+    left: 50%; /* Centre le bouton sur mobile */
+    transform: translateX(-50%); /* Ajuste la position du bouton */
   }
 }

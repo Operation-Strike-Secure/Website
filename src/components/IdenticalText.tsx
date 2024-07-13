@@ -1,5 +1,4 @@
 import React from 'react';
-import './IdenticalText.css';
 
 interface IdenticalTextProps {
   text: string;
@@ -7,7 +6,11 @@ interface IdenticalTextProps {
 }
 
 const IdenticalText: React.FC<IdenticalTextProps> = ({ text, color }) => {
-  return <p className="identical-text" style={{ color: color }}>{text}</p>;
+  return (
+    <span style={{ color: color || '#000' }}>
+      {text}
+    </span>
+  );
 };
 
 export default IdenticalText;

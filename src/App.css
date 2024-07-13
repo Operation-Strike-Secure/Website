@@ -1,9 +1,20 @@
-.App {
-  text-align: center;
-  align-items: center;
-  background-color: #ecf0f3;
-  height: 500vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+.container {
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
 }

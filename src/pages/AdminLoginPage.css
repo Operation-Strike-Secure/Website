@@ -1,0 +1,18 @@
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.login-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}

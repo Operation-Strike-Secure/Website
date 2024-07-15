@@ -1,11 +1,11 @@
-.page-title {
+/* .page-title {
   text-align: center;
   margin-bottom: 20px;
   color: #343a40;
 }
 
 .login-card {
-  background: #f8f9fa;
+  background: #2C3442;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -15,4 +15,76 @@
 
 .form-control {
   margin-bottom: 10px;
+} */
+
+
+/* src/components/AdminLoginPage.css */
+
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2E3440; /* Couleur de fond */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 420px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -130px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-title {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: 60px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.icon {
+  color: rgba(232, 163, 130, 1); /* Couleur de l'icône */
+  margin-right: 10px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #81A1C1; /* Couleur du bouton */
+  color: #2E3440; /* Couleur de l'icône du bouton */
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button:hover {
+  background-color: #5E81AC; /* Couleur du bouton au survol */
 }

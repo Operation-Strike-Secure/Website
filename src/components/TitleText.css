@@ -1,0 +1,13 @@
+/* .login-title {
+  font-size: 24px;
+  color: rgba(232, 163, 130, 1);
+  margin-bottom: 20px;
+} */
+
+/* src/components/LoginTitle.css */
+
+.login-title {
+  font-size: 24px;
+  color: rgba(232, 163, 130, 1);
+  /* Les marges et autres styles peuvent être remplacés par des styles passés en prop */
+}

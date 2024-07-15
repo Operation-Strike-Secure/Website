@@ -17,8 +17,9 @@
 }
 
 .table-wrapper th, .table-wrapper td {
-  padding: 2vh 5vw;
+  padding: 2vh 4vw;
   text-align: center;
+  font-size: 0.9em;
 }
 
 .table-wrapper th {
@@ -40,17 +41,25 @@
   font-weight: bold;
 }
 
-.ferme-row td {
-  color: rgba(58, 67, 82, 0.8) !important;
+@media (max-width: 992px) {
+  .table-wrapper th, .table-wrapper td {
+    font-size: 0.8em;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-  .table-wrapper th, .table-wrapper td {
-    padding: 0.5vh 1vw;
-    font-size: 0.9em;
+@media (max-width: 768px) {
+  .table-container {
+    max-height: 32vh;
   }
 
-  .even-row, .odd-row {
-    font-size: 0.9em;
+  .table-wrapper th, .table-wrapper td {
+    font-size: 0.7em;
+    padding: 2vh 2vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .table-wrapper th, .table-wrapper td {
+    font-size: 0.6em;
   }
 }

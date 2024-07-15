@@ -1,18 +1,15 @@
-.badge {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1vh 1vw;
-  border-radius: 4px;
-}
-
 .status-badge.repondu {
-  background-color: green;
+  background-color: #689752;
   color: white;
   border: none;
   cursor: pointer;
-  padding: 0.5vh 3vw;
+  padding: 1vh 2vw;
   border-radius: 30px;
+}
+
+.status-badge.repondu:hover {
+  background-color: #3a6723;
+  color: #989898;
 }
 
 .status-badge.en-attente {
@@ -20,5 +17,5 @@
 }
 
 .status-badge.ferme {
-  color: #3B343E;
+  color: #493c3c;
 }

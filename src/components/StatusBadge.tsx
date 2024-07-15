@@ -10,13 +10,13 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status }) => {
   const getBadgeClass = (status: string) => {
     switch (status.toLowerCase()) {
       case 'repondu':
-        return 'badge bg-success';
+        return 'status-badge repondu';
       case 'en attente':
-        return 'badge bg-warning';
+        return 'status-badge en-attente';
       case 'ferme':
-        return 'badge bg-danger';
+        return 'status-badge ferme';
       default:
-        return 'badge bg-secondary';
+        return 'status-badge repondu';
     }
   };
 

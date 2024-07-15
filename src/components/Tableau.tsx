@@ -2,19 +2,15 @@ import React from 'react';
 import IdenticalText from './IdenticalText';
 import StatusBadge from './StatusBadge';
 import './Tableau.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const data = [
-  { objets: 'Objet 1', creation: '2024-01-01', derniereActivite: '2024-01-05', status: 'repondu' },
-  { objets: 'Objet 2', creation: '2024-01-02', derniereActivite: '2024-01-06', status: 'En attente' },
-  { objets: 'Objet 3', creation: '2024-01-03', derniereActivite: '2024-01-07', status: 'FERME' },
-  { objets: 'Objet 1', creation: '2024-01-01', derniereActivite: '2024-01-05', status: 'repondu' },
-  { objets: 'Objet 2', creation: '2024-01-02', derniereActivite: '2024-01-06', status: 'En attente' },
-  { objets: 'Objet 3', creation: '2024-01-03', derniereActivite: '2024-01-07', status: 'FERME' },
-  { objets: 'Objet 1', creation: '2024-01-01', derniereActivite: '2024-01-05', status: 'repondu' },
-  { objets: 'Objet 2', creation: '2024-01-02', derniereActivite: '2024-01-06', status: 'En attente' },
-  { objets: 'Objet 3', creation: '2024-01-03', derniereActivite: '2024-01-07', status: 'FERME' },
-  // Ajoutez plus de données si nécessaire
+  { objets: 'BUG AFFICHAGE', creation: '21/02/2024', derniereActivite: '23/02/2024', status: 'RÉPONDU' },
+  { objets: 'REPORT JOUEUR', creation: '12/09/2024', derniereActivite: '19/09/2024', status: 'EN ATTENTE' },
+  { objets: 'CAMÉRA BUG', creation: '02/12/2024', derniereActivite: '03/12/2024', status: 'FERME' },
+  { objets: 'REPORT JOUEUR', creation: '12/09/2024', derniereActivite: '19/09/2024', status: 'FERME' },
+  { objets: 'BUG AFFICHAGE', creation: '21/02/2024', derniereActivite: '23/02/2024', status: 'RÉPONDU' },
+  { objets: 'BUG VOLUME', creation: '21/02/2024', derniereActivite: '23/02/2024', status: 'EN ATTENTE' },
+
 ];
 
 const Tableau: React.FC = () => {
@@ -31,7 +27,7 @@ const Tableau: React.FC = () => {
         </thead>
         <tbody>
           {data.map((row, index) => (
-            <tr key={index} className={`${index % 2 === 0 ? 'even-row' : 'odd-row'} ${row.status === 'FERME' ? 'ferme-row' : ''}`}>
+            <tr key={index} className={`${index % 2 === 0 ? 'even-row' : 'odd-row'}`}>
               <td><IdenticalText text={row.objets} color={row.status === 'FERME' ? '#4a5363' : 'white'} /></td>
               <td><IdenticalText text={row.creation} color={row.status === 'FERME' ? '#4a5363' : 'white'} /></td>
               <td><IdenticalText text={row.derniereActivite} color={row.status === 'FERME' ? '#4a5363' : 'white'} /></td>

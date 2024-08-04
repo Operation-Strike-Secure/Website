@@ -1,20 +1,3 @@
-// import React from 'react';
-// import './TitleText.css';
-
-// interface TitleTextProps {
-//   text: string;
-// }
-
-// const TitleText: React.FC<TitleTextProps> = ({ text }) => {
-//   return (
-//     <h2 className="login-title">{text}</h2>
-//   );
-// };
-
-// export default TitleText;
-
- // src/components/TitleText.tsx
-
 import React, { CSSProperties } from 'react';
 import './TitleText.css';
 

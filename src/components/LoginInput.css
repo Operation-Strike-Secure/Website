@@ -1,29 +1,12 @@
-/* .login-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4C566A;
-    color: #D8DEE9;
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  .login-input::placeholder {
-    color: #A3BE8C;
-  }
-   */
-
-   /* src/components/LoginInput.css */
-
 .login-input {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4C566A; /* Couleur de la zone de texte */
-  color: #D8DEE9; /* Couleur du texte dans la zone de texte */
+  background-color: #4C566A;
+  color: #D8DEE9;
   font-size: 16px;
 }
 
 .login-input::placeholder {
-  color: #A3BE8C; /* Couleur du placeholder */
+  color: #A3BE8C;
 }

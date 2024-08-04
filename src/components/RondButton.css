@@ -1,37 +1,17 @@
-/* src/components/SubmitButton.css */
-
-.login-button {
-    width: 15%;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    background-color: #81A1C1; /* Couleur du bouton */
-    color: #D9D9D9; /* Couleur de l'icône du bouton */
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.rond-button {
+  width: 15%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #7C90AF;
+  color: #D9D9D9;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   
-  .login-button:hover {
-    background-color: #5E81AC; /* Couleur du bouton au survol */
-  }
-
-  .rond-button {
-    width: 15%;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    background-color: #81A1C1; /* Couleur du bouton */
-    color: #D9D9D9; /* Couleur de l'icône du bouton */
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .rond-button:hover {
-    background-color: #5E81AC; /* Couleur du bouton au survol */
-  }
+.rond-button:hover {
+  background-color: #5E81AC;
+}

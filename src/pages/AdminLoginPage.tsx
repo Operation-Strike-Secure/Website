@@ -4,7 +4,7 @@ import TitleText from '../components/TitleText';
 import IdenticalText from '../components/IdenticalText';
 import LoginContainer from '../components/LoginContainer';
 import LoginInput from '../components/LoginInput';
-import RondButton from '../components/RondButton';
+import RondButton from '../components/SubmitButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

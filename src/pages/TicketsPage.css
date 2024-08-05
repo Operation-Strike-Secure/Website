@@ -4,3 +4,92 @@
   align-items: flex-start;
   margin-top: 200px;
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 51, 61, 0.67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 2vh 2vw;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  margin-left: 95%;
+  margin-top: -5%;
+  margin-bottom: 4vh;
+}
+
+.input-titre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 40px;
+  margin-top: -2%;
+}
+
+.input-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4%;
+}
+
+.PJ {
+  margin-left: -44%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1%;
+  margin-bottom: 5vh;
+  margin-left: 50px;
+}
+
+.file {
+  margin-left: 40px;
+}
+
+.file-info {
+  width: 400px; 
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 4%;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(41, 127, 181);
+}
+
+.quit-send {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.quit {
+  background-color: transparent;
+  border: none;
+  color: #7C90AF;
+}
+
+.send {
+  margin-left: 600px;
+}

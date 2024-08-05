@@ -40,6 +40,10 @@
   margin-right: 1vh;
 }
 
+.access {
+  margin-left: 36vh;
+  margin-top: 3vh;
+}
 
 @media (max-width: 576px) {
   .input-title {

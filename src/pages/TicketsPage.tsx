@@ -28,6 +28,7 @@ import LoginInput from '../components/LoginInput';
 import IdenticalText from '../components/IdenticalText';
 import Button from '../components/Button'
 import RondButton from '../components/SubmitButton'
+import TextAreaComponent from '../components/TextAreaComponent';
 
 import './TicketsPage.css';
 import { faTimes, faPlus, faShare } from '@fortawesome/free-solid-svg-icons';
@@ -72,6 +73,7 @@ const TicketsPage: React.FC = () => {
         className="modal-content"
         overlayClassName="modal-overlay"
       >
+      <div className="creation-ticket-container">
         <LoginContainer width="800px" height="500px">
           <button type="button" className="close-button" onClick={closeModal}>
             <FontAwesomeIcon icon={faTimes} />
@@ -80,7 +82,7 @@ const TicketsPage: React.FC = () => {
             <LoginInput type="text" placeholder="Titre" width="70%" height="40px" />
           </div>
           <div className="input-text">
-            <LoginInput type="text" placeholder="Text" width="70%" height="180px" />
+            <TextAreaComponent placeholder="Text" width="70%" height="180px" />
           </div>
           <div className="PJ">
             <IdenticalText text="PIÈCES JOINTES" color="#FFFFFF" />
@@ -104,6 +106,7 @@ const TicketsPage: React.FC = () => {
             </div>
           </div>
         </LoginContainer>
+      </div>
       </Modal>
     </div>
   );

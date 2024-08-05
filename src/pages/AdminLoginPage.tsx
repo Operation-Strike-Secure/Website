@@ -10,10 +10,6 @@ import { faUser, faLock, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const AdminLoginPage: React.FC = () => {
 
-  const buttonPosition = {
-    marginLeft: '280px'
-  };
-
   return (
     <div className="page-container">
       <LoginContainer width="400px" height="350px">
@@ -35,7 +31,9 @@ const AdminLoginPage: React.FC = () => {
           <div className="input-group">
             <LoginInput type="password" placeholder="Mot de passe" width="70%" height="40px" />
           </div>
-          <RondButton icon={faArrowRight} position={buttonPosition} />
+          <div className="access">
+            <RondButton icon={faArrowRight} />
+          </div>
         </form>
       </LoginContainer>
     </div>

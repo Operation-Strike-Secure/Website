@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import HeaderData from '../components/HeaderData';
-import StatsGraph from '../components/StatsGraph';
-import StatsDetails from '../components/StatsDetails';
+import HeaderData from '../components/Stats/HeaderData';
+import StatsGraph from '../components/Stats/StatsGraph';
+import StatsDetails from '../components/Stats/StatsDetails';
 import './StatisticPage.css';
 
 const StatisticPage: React.FC = () => {

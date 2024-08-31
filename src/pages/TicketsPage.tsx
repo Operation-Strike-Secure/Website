@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Tableau from '../components/Tableau';
-import Filters from '../components/Filters';
+import Filters from '../components/Filters/Filters';
 import Rectangle from '../components/Rectangle';
 
-import LoginContainer from '../components/LoginContainer';
-import LoginInput from '../components/LoginInput';
-import IdenticalText from '../components/IdenticalText';
-import Button from '../components/Button'
-import RondButton from '../components/SubmitButton'
-import TextAreaComponent from '../components/TextAreaComponent';
+import LoginContainer from '../components/Login/LoginContainer';
+import LoginInput from '../components/Login/LoginInput';
+import IdenticalText from '../components/Texts/IdenticalText';
+import Button from '../components/Buttons/Button'
+import RondButton from '../components/Buttons/SubmitButton'
+import TextAreaComponent from '../components/Texts/TextAreaComponent';
 
 import './TicketsPage.css';
 import { faTimes, faPlus, faShare } from '@fortawesome/free-solid-svg-icons';

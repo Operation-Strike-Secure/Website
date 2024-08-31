@@ -1,6 +1,6 @@
 import React from 'react';
-import IdenticalText from './IdenticalText';
-import StatusBadge from './StatusBadge';
+import IdenticalText from './Texts/IdenticalText';
+import StatusBadge from './Stats/StatusBadge';
 import './Tableau.css';
 
 const data = [

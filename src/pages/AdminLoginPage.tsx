@@ -1,10 +1,10 @@
 import React from 'react';
 import './AdminLoginPage.css';
-import TitleText from '../components/TitleText';
-import IdenticalText from '../components/IdenticalText';
-import LoginContainer from '../components/LoginContainer';
-import LoginInput from '../components/LoginInput';
-import RondButton from '../components/SubmitButton';
+import TitleText from '../components/Texts/TitleText';
+import IdenticalText from '../components/Texts/IdenticalText';
+import LoginContainer from '../components/Login/LoginContainer';
+import LoginInput from '../components/Login/LoginInput';
+import RondButton from '../components/Buttons/SubmitButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

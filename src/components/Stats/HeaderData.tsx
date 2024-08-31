@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FilterButton from './FilterButton';
+import FilterButton from '../Buttons/FilterButton';
 
 import './HeaderData.css';
 

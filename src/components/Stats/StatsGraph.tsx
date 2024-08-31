@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './StatsGraph.css';
-import FilterSelector from './FilterSelector';
+import FilterSelector from '../Filters/FilterSelector';
 import StatContainer from './StatContainer';
 
 interface StatsGraphProps {

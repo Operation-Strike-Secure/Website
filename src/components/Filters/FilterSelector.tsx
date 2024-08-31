@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TitleText from './TitleText';
+import TitleText from '../Texts/TitleText';
 import './FilterSelector.css';
 
 interface FilterSelectorProps {

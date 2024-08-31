@@ -18,3 +18,14 @@
     max-width: 970px;
   }
 }
+
+.page-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.main-content {
+  overflow-y: auto;
+  padding: 15px;
+}

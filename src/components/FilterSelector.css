@@ -1,0 +1,22 @@
+.filter-selector-container {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-title {
+  margin: 0 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.filter-selector-container select {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #ffffff !important;
+  border: none;
+  border-radius: 20px;
+}

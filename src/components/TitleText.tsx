@@ -4,9 +4,10 @@ import './TitleText.css';
 interface TitleTextProps {
   text: string;
   style?: CSSProperties;
+  color?: string;
 }
 
-const TitleText: React.FC<TitleTextProps> = ({ text, style }) => {
+const TitleText: React.FC<TitleTextProps> = ({ text, style, color }) => {
   return (
     <h2 className="login-title" style={style}>{text}</h2>
   );

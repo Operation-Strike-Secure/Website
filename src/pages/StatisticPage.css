@@ -1,12 +1,30 @@
-.page-title {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #343a40;
+.statistic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
 }
 
-.statistics-card {
-  background: #f8f9fa;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.statistic-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  flex-grow: 1;
+}
+
+.statistic-content > div {
+  flex: 1 1 45%;
+  min-width: 300px;
 }

@@ -5,16 +5,21 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 interface SubmitButtonProps {
-  onClick?: () => void;
   icon?: IconDefinition;
+  onClick?: () => void;
+  disabled?: boolean;
 }
 
-const RondButton: React.FC<SubmitButtonProps> = ({ onClick, icon = faArrowRight,  }) => {
+const SubmitButton: React.FC<SubmitButtonProps> = ({ icon = faArrowRight, onClick , disabled = false }) => {
   return (
-    <button type="submit" className="rond-button" onClick={onClick} >
+    <button
+      className="rond-button"
+      onClick={onClick}
+      disabled={disabled}
+    >
       <FontAwesomeIcon icon={icon} />
     </button>
   );
 };
 
-export default RondButton;
+export default SubmitButton;

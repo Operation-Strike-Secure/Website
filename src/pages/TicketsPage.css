@@ -45,7 +45,7 @@
   color: #ffffff;
   position: absolute;
   top: 3rem;
-  right: 17rem;
+  right: 28vw;
 }
 
 .input-titre {
@@ -109,7 +109,7 @@
 
 @media (max-width: 768px) {
   .close-button {
-    right: 0rem;
+    right: 0vw;
   }
 
   .file-info {

@@ -1,0 +1,12 @@
+.ticket-input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4C566A;
+  color: #D8DEE9;
+  font-size: 16px;
+}
+
+.ticket-input::placeholder {
+  color: #adadad;
+}

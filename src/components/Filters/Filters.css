@@ -27,6 +27,14 @@
 .filter:focus,
 .create-ticket-button:hover {
   color: rgba(232, 163, 130, 1) !important;
+    /* background: linear-gradient(to right, 
+  rgba(232, 163, 130, 1) 0%,
+  rgba(254, 226, 214, 1) 52%,
+  rgba(232, 163, 130, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .create-ticket-button {

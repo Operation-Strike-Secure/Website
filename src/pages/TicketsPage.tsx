@@ -1,96 +1,179 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
-import Tableau from '../components/Tableau';
-import Filters from '../components/Filters/Filters';
-import Rectangle from '../components/Rectangle';
+import React, { useState } from "react";
+import PageWrapper from "../components/PageWrapper";
+import {
+    TableContainer,
+    Table,
+    TableHead,
+    TableBody,
+    TableRow,
+    TableCell,
+    Paper,
+    Button,
+    Select,
+    MenuItem,
+    TablePagination,
+    Chip,
+} from "@mui/material";
+import { styled } from "@mui/material/styles";
+import TicketCreator from "../components/TicketCreator";
+import TicketInfo from "../components/TicketInfo";
 
-import LoginContainer from '../components/Login/LoginContainer';
-import LoginInput from '../components/Login/LoginInput';
-import IdenticalText from '../components/Texts/IdenticalText';
-import Button from '../components/Buttons/Button'
-import RondButton from '../components/Buttons/SubmitButton'
-import TextAreaComponent from '../components/Texts/TextAreaComponent';
+const ticketsData = [
+    { id: 1, objet: "Problème de connexion", creationDate: "2024-09-10", lastActivityDate: "2024-09-12", status: "En attente" },
+    { id: 2, objet: "Question sur la facturation", creationDate: "2024-09-08", lastActivityDate: "2024-09-10", status: "Répondu" },
+    { id: 3, objet: "Bug sur la page d'inscription", creationDate: "2024-09-05", lastActivityDate: "2024-09-06", status: "Fermé" },
+    { id: 4, objet: "Problème de connexion", creationDate: "2024-09-10", lastActivityDate: "2024-09-12", status: "En attente" },
+    { id: 5, objet: "Question sur la facturation", creationDate: "2024-09-08", lastActivityDate: "2024-09-10", status: "Répondu" },
+    { id: 6, objet: "Bug sur la page d'inscription", creationDate: "2024-09-05", lastActivityDate: "2024-09-06", status: "Fermé" },
+    { id: 7, objet: "Problème de connexion", creationDate: "2024-09-10", lastActivityDate: "2024-09-12", status: "En attente" },
+    { id: 8, objet: "Question sur la facturation", creationDate: "2024-09-08", lastActivityDate: "2024-09-10", status: "Répondu" },
+    { id: 9, objet: "Bug sur la page d'inscription", creationDate: "2024-09-05", lastActivityDate: "2024-09-06", status: "Fermé" },
+    { id: 10, objet: "Problème de connexion", creationDate: "2024-09-10", lastActivityDate: "2024-09-12", status: "En attente" },
+    { id: 11, objet: "Question sur la facturation", creationDate: "2024-09-08", lastActivityDate: "2024-09-10", status: "Répondu" },
+    { id: 12, objet: "Bug sur la page d'inscription", creationDate: "2024-09-05", lastActivityDate: "2024-09-06", status: "Fermé" },
+    { id: 13, objet: "Problème de connexion", creationDate: "2024-09-10", lastActivityDate: "2024-09-12", status: "En attente" },
+    { id: 14, objet: "Question sur la facturation", creationDate: "2024-09-08", lastActivityDate: "2024-09-10", status: "Répondu" },
+    { id: 15, objet: "Bug sur la page d'inscription", creationDate: "2024-09-05", lastActivityDate: "2024-09-06", status: "Fermé" },
+    { id: 16, objet: "Problème de connexion", creationDate: "2024-09-10", lastActivityDate: "2024-09-12", status: "En attente" },
+    { id: 17, objet: "Question sur la facturation", creationDate: "2024-09-08", lastActivityDate: "2024-09-10", status: "Répondu" }
+];
 
-import './TicketsPage.css';
-import { faTimes, faPlus, faShare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    "&.MuiTableCell-head": {
+        backgroundColor: theme.palette.primary.dark,
+        color: theme.palette.common.white,
+    },
+    "&.MuiTableCell-body": {
+        fontSize: 14,
+        color: theme.palette.common.white,
+        backgroundColor: "#343a40",
+    },
+}));
 
-Modal.setAppElement('#root');
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    backgroundColor: "#455165",
+    "&:hover": {
+        backgroundColor: "#343a40",
+    },
+}));
 
 const TicketsPage: React.FC = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+    const [statusFilter, setStatusFilter] = useState("");
+    const [isCreatingTicket, setIsCreatingTicket] = useState(false);
+    const [selectedTicket, setSelectedTicket] = useState<any>(null);
+    const [page, setPage] = useState(0);
+    const [rowsPerPage, setRowsPerPage] = useState(6);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
+    const handleChangePage = (event: unknown, newPage: number) => {
+        setPage(newPage);
+    };
 
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setRowsPerPage(parseInt(event.target.value, 10));
+        setPage(0);
+    };
 
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files && event.target.files[0]) {
-      setSelectedFile(event.target.files[0]);
-    }
-  };
+    const handleCreateTicket = () => {
+        setIsCreatingTicket(true);
+    };
 
-  const handleButtonClick = () => {
-    const fileInput = document.getElementById('fileInput') as HTMLInputElement;
-    if (fileInput) {
-      fileInput.click();
-    }
-  };
+    const handleRowClick = (ticket: any) => {
+        setSelectedTicket(ticket);
+    };
 
-  return (
-    <div className="tickets-page-container container mt-4">
-      <Rectangle width="200%" height="50vh" marginTop="90px">
-        <Filters onCreateTicketClick={openModal} />
-        <Tableau />
-      </Rectangle>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className="modal-content"
-        overlayClassName="modal-overlay"
-      >
-      <div className="creation-ticket-container">
-        <LoginContainer width="800px" height="500px">
-          <button type="button" className="close-button" onClick={closeModal}>
-            <FontAwesomeIcon icon={faTimes} />
-          </button>
-          <div className="input-titre">
-            <LoginInput type="text" placeholder="Titre" width="70%" height="40px" />
-          </div>
-          <div className="input-text">
-            <TextAreaComponent placeholder="Text" width="70%" height="180px" />
-          </div>
-          <div className="PJ">
-            <IdenticalText text="PIÈCES JOINTES" color="#FFFFFF" />
-            <div className="file">
-              <Button icon={faPlus} onClick={handleButtonClick}/>
-            </div>
-            <input
-              type="file"
-              id="fileInput"
-              style={{ display: 'none' }}
-              onChange={handleFileChange}
-            />
-            <div className="file-info">
-              {selectedFile ? <p>{selectedFile.name}</p> : <p>Aucun fichier sélectionné</p>}
-            </div>
-          </div>
-          <div className="quit-send">
-            <button type="button" className="quit" onClick={closeModal}>CANCEL</button>
-            <div className="send">
-              <RondButton icon={faShare} onClick={closeModal}/>
-            </div>
-          </div>
-        </LoginContainer>
-      </div>
-      </Modal>
-    </div>
-  );
+    const getStatusChipColor = (status: string) => {
+        switch (status) {
+            case "En attente":
+                return "warning";
+            case "Répondu":
+                return "info";
+            case "Fermé":
+                return "success";
+            default:
+                return "default";
+        }
+    };
+
+    const filteredTickets = ticketsData.filter(ticket => (statusFilter ? ticket.status === statusFilter : true));
+
+    return (
+        <PageWrapper>
+            {isCreatingTicket ? (
+                <TicketCreator close={() => setIsCreatingTicket(false)} />
+            ) : selectedTicket ? (
+                <TicketInfo ticket={selectedTicket} goBack={() => setSelectedTicket(null)} />
+            ) : (
+                <div>
+                    <div className="flex justify-between items-center mb-4">
+                        <Select
+                            value={statusFilter}
+                            onChange={(e) => setStatusFilter(e.target.value)}
+                            displayEmpty
+                            sx={{ color: "white", minWidth: 200, backgroundColor: "#455165" }}
+                        >
+                            <MenuItem value="">Tous les statuts</MenuItem>
+                            <MenuItem value="En attente">En attente</MenuItem>
+                            <MenuItem value="Répondu">Répondu</MenuItem>
+                            <MenuItem value="Fermé">Fermé</MenuItem>
+                        </Select>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={handleCreateTicket}
+                            sx={{ backgroundColor: "#E8A382", "&:hover": { backgroundColor: "#FEE2D6" } }}
+                        >
+                            Créer un ticket
+                        </Button>
+                    </div>
+
+                    <TableContainer component={Paper} className="bg-dark-blue">
+                        <Table>
+                            <TableHead>
+                                <TableRow>
+                                    <StyledTableCell>Objet</StyledTableCell>
+                                    <StyledTableCell>Date de création</StyledTableCell>
+                                    <StyledTableCell>Date de dernière activité</StyledTableCell>
+                                    <StyledTableCell>Statut</StyledTableCell>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {filteredTickets
+                                    .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                                    .map((ticket) => (
+                                        <StyledTableRow
+                                            key={ticket.id}
+                                            hover
+                                            onClick={() => handleRowClick(ticket)}
+                                            className="cursor-pointer"
+                                        >
+                                            <StyledTableCell>
+                                                {ticket.objet.length > 30 ? `${ticket.objet.substring(0, 27)}...` : ticket.objet}
+                                            </StyledTableCell>
+                                            <StyledTableCell>{ticket.creationDate}</StyledTableCell>
+                                            <StyledTableCell>{ticket.lastActivityDate}</StyledTableCell>
+                                            <StyledTableCell>
+                                                <Chip label={ticket.status} color={getStatusChipColor(ticket.status)} />
+                                            </StyledTableCell>
+                                        </StyledTableRow>
+                                    ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
+                    <TablePagination
+                        component="div"
+                        count={filteredTickets.length}
+                        page={page}
+                        onPageChange={handleChangePage}
+                        rowsPerPage={rowsPerPage}
+                        onRowsPerPageChange={handleChangeRowsPerPage}
+                        rowsPerPageOptions={[6]}
+                        sx={{ color: "white", mt: 2 }}
+                    />
+                </div>
+            )}
+        </PageWrapper>
+    );
 };
 
 export default TicketsPage;

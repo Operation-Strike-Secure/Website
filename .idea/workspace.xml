@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f3d64d5-8ac2-442b-a2fb-58c09ef42f55" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/BackgroundImage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BackgroundImage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/FilterButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/FilterButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/SubmitButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/SubmitButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filters/FilterSelector.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filters/FilterSelector.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filters/Filters.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filters/Filters.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginContainer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginInput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginInput.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rectangle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rectangle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/HeaderData.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/HeaderData.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatContainer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatsDetails.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatsDetails.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatsGraph.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatsGraph.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatusBadge.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stats/StatusBadge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tableau.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tableau.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Texts/IdenticalText.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Texts/TextAreaComponent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Texts/TextAreaComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Texts/TitleText.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Texts/TitleText.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdminLoginPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AdminLoginPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/StatisticPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/StatisticPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TicketsPage.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Front-Back" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ancadeau"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Operation-Strike-Secure/Website.git",
+    "accountId": "86c45e92-9ec3-4f7c-b5a4-9154735f4fef"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2m9fvzPue37CRImGK1YQ44ryFxW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="1" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Refacto",
+    "last_opened_file_path": "/Users/ancadeau/Epitech/EIP/OSS_Website",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.language.and.region",
+    "ts.external.directory.path": "/Users/ancadeau/Epitech/EIP/OSS_Website/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f3d64d5-8ac2-442b-a2fb-58c09ef42f55" name="Changes" comment="" />
+      <created>1726493950826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726493950826</updated>
+      <workItem from="1726493951916" duration="1454000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="nginx.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

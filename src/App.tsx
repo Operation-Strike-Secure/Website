@@ -1,30 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BackgroundImage from './components/BackgroundImage';
-import Navbar from './components/Navbar';
-import StatisticPage from './pages/StatisticPage';
-import TicketsPage from './pages/TicketsPage';
-import AdminLoginPage from './pages/AdminLoginPage';
-
-import './App.css';
-
-import backgroundImage from '../src/assets/Fond.png'
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AuthProvider from "./context/AuthProvider";
+import PageRouter from "./router/PageRouter";
+import { MyNavbar } from "./components/Navbar";
+import { ThemeProvider } from "@material-tailwind/react";
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <div>
-        <BackgroundImage imageUrl={backgroundImage}>
-          <Navbar />
-          <Routes>
-            <Route path="/statistics" element={<StatisticPage />} />
-            <Route path="/tickets" element={<TicketsPage />} />
-            <Route path="/admin" element={<AdminLoginPage />} />
-            <Route path="/" element={<AdminLoginPage />} />
-          </Routes>
-        </BackgroundImage>
-      </div>
-    </Router>
+    <AuthProvider>
+      <ThemeProvider>
+        <div
+          className="min-h-screen bg-cover bg-center"
+          style={{ backgroundImage: `url('/images/background.png')` }}
+        >
+          <Router>
+            <MyNavbar />
+            <PageRouter />
+          </Router>
+        </div>
+      </ThemeProvider>
+    </AuthProvider>
   );
 };
 

@@ -1,0 +1,2102 @@
+Index: src/components/Stats/StatContainer.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatContainer.css b/src/components/Stats/StatContainer.css
+deleted file mode 100644
+--- a/src/components/Stats/StatContainer.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,11 +0,0 @@
+-.stat-container {
+-  display: flex;
+-  flex-direction: column;
+-  background-color: #2B3341;
+-  border-radius: 10px;
+-  box-sizing: border-box;
+-  width: 100%;
+-  height: 100%;
+-  justify-content: center;
+-  overflow: hidden;
+-}
+\ No newline at end of file
+Index: src/components/Texts/TextAreaComponent.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Texts/TextAreaComponent.css b/src/components/Texts/TextAreaComponent.css
+deleted file mode 100644
+--- a/src/components/Texts/TextAreaComponent.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,15 +0,0 @@
+-.textarea {
+-  padding: 10px;
+-  border: none;
+-  border-radius: 20px;
+-  background-color: #4C566A;
+-  color: #D8DEE9;
+-  resize: none;
+-  overflow-y: scroll;
+-  scrollbar-width: thin;
+-  scrollbar-color: #2C3442 transparent;
+-}
+-
+-.textarea::placeholder {
+-  color: #adadad;
+-}
+\ No newline at end of file
+Index: src/components/Tableau.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Tableau.css b/src/components/Tableau.css
+deleted file mode 100644
+--- a/src/components/Tableau.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,65 +0,0 @@
+-.table-container {
+-  display: flex;
+-  flex-direction: column;
+-  overflow-y: auto;
+-  overflow-x: auto;
+-  scrollbar-width: thin;
+-  scrollbar-color: rgba(115, 131, 158, 0.2) transparent;
+-  width: 100%;
+-  max-height: 38vh;
+-  background-color: transparent;
+-}
+-
+-.table-wrapper {
+-  width: 100%;
+-  border-collapse: collapse;
+-  font-size: 1em;
+-}
+-
+-.table-wrapper th, .table-wrapper td {
+-  padding: 2vh 3vw;
+-  text-align: center;
+-  font-size: 0.9em;
+-}
+-
+-.table-wrapper th {
+-  position: sticky;
+-  top: 0;
+-  background-color: #252B35;
+-  z-index: 1;
+-}
+-
+-.even-row {
+-  background-color: transparent;
+-  font-size: 1em;
+-  font-weight: bold;
+-}
+-
+-.odd-row {
+-  background-color: #252B35;
+-  font-size: 1em;
+-  font-weight: bold;
+-}
+-
+-@media (max-width: 992px) {
+-  .table-wrapper th, .table-wrapper td {
+-    font-size: 0.8em;
+-  }
+-}
+-
+-@media (max-width: 768px) {
+-  .table-container {
+-    max-height: 32vh;
+-  }
+-
+-  .table-wrapper th, .table-wrapper td {
+-    font-size: 0.7em;
+-    padding: 2vh 2vw;
+-  }
+-}
+-
+-@media (max-width: 576px) {
+-  .table-wrapper th, .table-wrapper td {
+-    font-size: 0.6em;
+-  }
+-}
+\ No newline at end of file
+Index: src/components/Tickets/TicketContainer.css
+===================================================================
+diff --git a/src/components/Tickets/TicketContainer.css b/src/components/Tickets/TicketContainer.css
+deleted file mode 100644
+--- a/src/components/Tickets/TicketContainer.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,9 +0,0 @@
+-.ticket-container {
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  background-color: #2C3442;
+-  border-radius: 10px;
+-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+-}
+\ No newline at end of file
+Index: src/components/BackgroundImage.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/BackgroundImage.css b/src/components/BackgroundImage.css
+deleted file mode 100644
+--- a/src/components/BackgroundImage.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,11 +0,0 @@
+-.background-image {
+-  position: fixed;
+-  top: 0;
+-  left: 0;
+-  width: 100%;
+-  height: 100%;
+-  z-index: -1;
+-  background-size: cover;
+-  background-repeat: no-repeat;
+-  background-position: center;
+-}
+\ No newline at end of file
+Index: src/components/Login/LoginContainer.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Login/LoginContainer.tsx b/src/components/Login/LoginContainer.tsx
+deleted file mode 100644
+--- a/src/components/Login/LoginContainer.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,18 +0,0 @@
+-import React from 'react';
+-import './LoginContainer.css';
+-
+-interface LoginContainerProps {
+-  children: React.ReactNode;
+-  width?: string;
+-  height?: string;
+-}
+-
+-const LoginContainer: React.FC<LoginContainerProps> = ({ children, width, height }) => {
+-  return (
+-    <div className="login-container" style={{ width, height }}>
+-      {children}
+-    </div>
+-  );
+-};
+-
+-export default LoginContainer;
+\ No newline at end of file
+Index: src/components/Tickets/TicketInput.css
+===================================================================
+diff --git a/src/components/Tickets/TicketInput.css b/src/components/Tickets/TicketInput.css
+deleted file mode 100644
+--- a/src/components/Tickets/TicketInput.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,12 +0,0 @@
+-.ticket-input {
+-  padding: 10px;
+-  border: none;
+-  border-radius: 20px;
+-  background-color: #4C566A;
+-  color: #D8DEE9;
+-  font-size: 16px;
+-}
+-
+-.ticket-input::placeholder {
+-  color: #adadad;
+-}
+\ No newline at end of file
+Index: src/components/Filters/FilterSelector.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Filters/FilterSelector.tsx b/src/components/Filters/FilterSelector.tsx
+deleted file mode 100644
+--- a/src/components/Filters/FilterSelector.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,56 +0,0 @@
+-import React, { useState, useEffect } from 'react';
+-import TitleText from '../Texts/TitleText';
+-import './FilterSelector.css';
+-
+-interface FilterSelectorProps {
+-  periodType: string;
+-  onFilterSelect: (filter: string) => void;
+-}
+-
+-const FilterSelector: React.FC<FilterSelectorProps> = ({ periodType, onFilterSelect }) => {
+-  const [selectedFilter, setSelectedFilter] = useState('SEM 2');
+-  const [options, setOptions] = useState<string[]>([]);
+-
+-  useEffect(() => {
+-    switch (periodType) {
+-      case 'JOUR':
+-        setOptions(['LUNDI', 'MARDI', 'MERCREDI', 'JEUDI', 'VENDREDI', 'SAMEDI', 'DIMANCHE']);
+-        break;
+-      case 'SEMAINE':
+-        setOptions(['SEM 1', 'SEM 2', 'SEM 3', 'SEM 4']);
+-        break;
+-      case 'MOIS':
+-        setOptions(['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']);
+-        break;
+-      // case 'ANNEE':
+-      //   setOptions(['2020', '2021', '2022', '2023']);
+-      //   break;
+-      default:
+-        setOptions([]);
+-        break;
+-    }
+-  }, [periodType]);
+-
+-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+-    const value = event.target.value;
+-    setSelectedFilter(value);
+-    onFilterSelect(value);
+-  };
+-
+-  return (
+-    <div className="filter-selector-container">
+-      <div className="filter-title">
+-        <TitleText text="JOUEURS" />
+-      </div>
+-      <select id="filter-selector" value={selectedFilter} onChange={handleChange}>
+-        {options.map((option) => (
+-          <option key={option} value={option}>
+-            {option}
+-          </option>
+-        ))}
+-      </select>
+-    </div>
+-  );
+-};
+-
+-export default FilterSelector;
+\ No newline at end of file
+Index: src/components/Stats/StatsDetails.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatsDetails.css b/src/components/Stats/StatsDetails.css
+deleted file mode 100644
+--- a/src/components/Stats/StatsDetails.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,4 +0,0 @@
+-.detail-item {
+-  font-size: 24px;
+-  margin: 10px 0;
+-}
+\ No newline at end of file
+Index: src/components/Stats/StatsGraph.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatsGraph.css b/src/components/Stats/StatsGraph.css
+deleted file mode 100644
+--- a/src/components/Stats/StatsGraph.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,16 +0,0 @@
+-.filter-header {
+-  width: 100%;
+-  color: #fff;
+-}
+-
+-.nav-button {
+-  background-color: transparent;
+-  border: none;
+-  color: #fff;
+-  font-size: 24px;
+-  cursor: pointer;
+-}
+-
+-.nav-button:hover {
+-  color: #f7a69a;
+-}
+\ No newline at end of file
+Index: src/components/Rectangle.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Rectangle.css b/src/components/Rectangle.css
+deleted file mode 100644
+--- a/src/components/Rectangle.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,18 +0,0 @@
+-.rectangle {
+-  border: none;
+-  padding: 20px;
+-  border-radius: 15px;
+-  background-color: rgba(43, 51, 65, 0.8);
+-  display: flex;
+-  flex-direction: column;
+-  justify-content: flex-start;
+-  margin-top: 0px;
+-  backdrop-filter: blur(10px);
+-}
+-
+-.rectangle-content {
+-  display: flex;
+-  flex-direction: column;
+-  justify-content: flex-start;
+-  align-items: center;
+-}
+\ No newline at end of file
+Index: src/components/Rectangle.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Rectangle.tsx b/src/components/Rectangle.tsx
+deleted file mode 100644
+--- a/src/components/Rectangle.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,24 +0,0 @@
+-import React from 'react';
+-import './Rectangle.css';
+-import 'bootstrap/dist/css/bootstrap.min.css';
+-
+-interface RectangleProps {
+-  width?: string;
+-  height?: string;
+-  marginTop?: string;
+-  children: React.ReactNode;
+-}
+-
+-const Rectangle: React.FC<RectangleProps> = ({ width = '100%', height = 'auto', marginTop = '0px', children }) => {
+-  return (
+-    <div className="rectangle container-fluid" style={{ width, height, marginTop }}>
+-      <div className="row justify-content-center">
+-        <div className="col-12 rectangle-content">
+-          {children}
+-        </div>
+-      </div>
+-    </div>
+-  );
+-};
+-
+-export default Rectangle;
+\ No newline at end of file
+Index: src/components/Texts/IdenticalText.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Texts/IdenticalText.tsx b/src/components/Texts/IdenticalText.tsx
+deleted file mode 100644
+--- a/src/components/Texts/IdenticalText.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,16 +0,0 @@
+-import React from 'react';
+-
+-interface IdenticalTextProps {
+-  text: string;
+-  color?: string;
+-}
+-
+-const IdenticalText: React.FC<IdenticalTextProps> = ({ text, color }) => {
+-  return (
+-    <span style={{ color: color || '#000' }}>
+-      {text}
+-    </span>
+-  );
+-};
+-
+-export default IdenticalText;
+\ No newline at end of file
+Index: src/components/Tableau.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Tableau.tsx b/src/components/Tableau.tsx
+deleted file mode 100644
+--- a/src/components/Tableau.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,43 +0,0 @@
+-import React from 'react';
+-import IdenticalText from './Texts/IdenticalText';
+-import StatusBadge from './Stats/StatusBadge';
+-import './Tableau.css';
+-
+-const data = [
+-  { objets: 'BUG AFFICHAGE', creation: '21/02/2024', derniereActivite: '23/02/2024', status: 'RÉPONDU' },
+-  { objets: 'REPORT JOUEUR', creation: '12/09/2024', derniereActivite: '19/09/2024', status: 'EN ATTENTE' },
+-  { objets: 'CAMÉRA BUG', creation: '02/12/2024', derniereActivite: '03/12/2024', status: 'FERME' },
+-  { objets: 'REPORT JOUEUR', creation: '12/09/2024', derniereActivite: '19/09/2024', status: 'FERME' },
+-  { objets: 'BUG AFFICHAGE', creation: '21/02/2024', derniereActivite: '23/02/2024', status: 'RÉPONDU' },
+-  { objets: 'BUG VOLUME', creation: '21/02/2024', derniereActivite: '23/02/2024', status: 'EN ATTENTE' },
+-
+-];
+-
+-const Tableau: React.FC = () => {
+-  return (
+-    <div className="table-container">
+-      <table className="table-wrapper">
+-        <thead>
+-          <tr>
+-            <th><IdenticalText text="OBJETS" color="#7C90AF" /></th>
+-            <th><IdenticalText text="CREATION" color="#7C90AF" /></th>
+-            <th><IdenticalText text="DERNIERE ACTIVITE" color="#7C90AF" /></th>
+-            <th><IdenticalText text="STATUS" color="#7C90AF" /></th>
+-          </tr>
+-        </thead>
+-        <tbody>
+-          {data.map((row, index) => (
+-            <tr key={index} className={`${index % 2 === 0 ? 'even-row' : 'odd-row'}`}>
+-              <td><IdenticalText text={row.objets} color={row.status === 'FERME' ? '#4a5363' : 'white'} /></td>
+-              <td><IdenticalText text={row.creation} color={row.status === 'FERME' ? '#4a5363' : 'white'} /></td>
+-              <td><IdenticalText text={row.derniereActivite} color={row.status === 'FERME' ? '#4a5363' : 'white'} /></td>
+-              <td><StatusBadge status={row.status} /></td>
+-            </tr>
+-          ))}
+-        </tbody>
+-      </table>
+-    </div>
+-  );
+-};
+-
+-export default Tableau;
+\ No newline at end of file
+Index: src/components/Login/LoginContainer.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Login/LoginContainer.css b/src/components/Login/LoginContainer.css
+deleted file mode 100644
+--- a/src/components/Login/LoginContainer.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,9 +0,0 @@
+-.login-container {
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  background-color: #2C3442;
+-  border-radius: 10px;
+-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+-}
+\ No newline at end of file
+Index: src/pages/StatisticPage.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/StatisticPage.css b/src/pages/StatisticPage.css
+deleted file mode 100644
+--- a/src/pages/StatisticPage.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,30 +0,0 @@
+-.statistic-container {
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  background-color: transparent;
+-  color: #fff;
+-  margin-top: 100px;
+-  padding-bottom: 20px;
+-  width: 100%;
+-  height: 80vh;
+-  overflow-y: auto;
+-}
+-
+-.statistic-content {
+-  display: flex;
+-  justify-content: center;
+-  align-items: flex-start;
+-  flex-wrap: wrap;
+-  width: 100%;
+-  max-width: 1200px;
+-  gap: 20px;
+-  margin-top: 20px;
+-  padding-bottom: 20px;
+-  flex-grow: 1;
+-}
+-
+-.statistic-content > div {
+-  flex: 1 1 45%;
+-  min-width: 300px;
+-}
+\ No newline at end of file
+Index: src/components/Buttons/FilterButton.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Buttons/FilterButton.tsx b/src/components/Buttons/FilterButton.tsx
+deleted file mode 100644
+--- a/src/components/Buttons/FilterButton.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,18 +0,0 @@
+-import React from 'react';
+-import './FilterButton.css';
+-
+-interface FilterButtonProps {
+-  label: string;
+-  isActive: boolean;
+-  onClick: () => void;
+-}
+-
+-const FilterButton: React.FC<FilterButtonProps> = ({ label, isActive, onClick }) => {
+-  return (
+-    <button className={`filter-button ${isActive ? 'active' : ''}`} onClick={onClick}>
+-      {label}
+-    </button>
+-  );
+-};
+-
+-export default FilterButton;
+\ No newline at end of file
+Index: src/components/BackgroundImage.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/BackgroundImage.tsx b/src/components/BackgroundImage.tsx
+deleted file mode 100644
+--- a/src/components/BackgroundImage.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,30 +0,0 @@
+-import React from 'react';
+-import './BackgroundImage.css';
+-
+-interface BackgroundImageProps {
+-  imageUrl: string;
+-  children: React.ReactNode;
+-}
+-
+-export const BackgroundImage: React.FC<BackgroundImageProps> = ({ imageUrl, children }) => {
+-  const divStyle: React.CSSProperties = {
+-    backgroundImage: `url(${imageUrl})`,
+-    backgroundSize: 'cover',
+-    backgroundRepeat: 'no-repeat',
+-    backgroundPosition: 'center',
+-    minHeight: '100vh',
+-    position: 'fixed',
+-    top: 0,
+-    left: 0,
+-    width: '100%',
+-    zIndex: -1,
+-  };
+-
+-  return (
+-    <div className="background-image" style={divStyle}>
+-      {children}
+-    </div>
+-  );
+-};
+-
+-export default BackgroundImage;
+\ No newline at end of file
+Index: src/components/Filters/FilterSelector.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Filters/FilterSelector.css b/src/components/Filters/FilterSelector.css
+deleted file mode 100644
+--- a/src/components/Filters/FilterSelector.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,22 +0,0 @@
+-.filter-selector-container {
+-  margin-bottom: 20px;
+-  text-align: center;
+-  display: flex;
+-  justify-content: space-between;
+-  align-items: center;
+-  width: 100%;
+-}
+-
+-.filter-title {
+-  margin: 0 10px;
+-  flex: 1;
+-  text-align: left;
+-}
+-
+-.filter-selector-container select {
+-  padding: 5px 10px;
+-  font-size: 16px;
+-  background-color: #ffffff !important;
+-  border: none;
+-  border-radius: 20px;
+-}
+\ No newline at end of file
+Index: src/components/Stats/StatusBadge.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatusBadge.tsx b/src/components/Stats/StatusBadge.tsx
+deleted file mode 100644
+--- a/src/components/Stats/StatusBadge.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,30 +0,0 @@
+-import React from 'react';
+-import './StatusBadge.css';
+-
+-interface StatusBadgeProps {
+-  status: string;
+-  backgroundColor?: string;
+-}
+-
+-const StatusBadge: React.FC<StatusBadgeProps> = ({ status }) => {
+-  const getBadgeClass = (status: string) => {
+-    switch (status.toLowerCase()) {
+-      case 'repondu':
+-        return 'status-badge repondu';
+-      case 'en attente':
+-        return 'status-badge en-attente';
+-      case 'ferme':
+-        return 'status-badge ferme';
+-      default:
+-        return 'status-badge repondu';
+-    }
+-  };
+-
+-  return (
+-    <span className={getBadgeClass(status)}>
+-      {status}
+-    </span>
+-  );
+-};
+-
+-export default StatusBadge;
+\ No newline at end of file
+Index: src/components/Buttons/FilterButton.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Buttons/FilterButton.css b/src/components/Buttons/FilterButton.css
+deleted file mode 100644
+--- a/src/components/Buttons/FilterButton.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,18 +0,0 @@
+-.filter-button {
+-  margin: 0 15px;
+-  padding: 10px 20px;
+-  color: #7C90AF;
+-  background-color: transparent;
+-  border: none;
+-  cursor: pointer;
+-  transition: color 0.3s;
+-  font-size: 25px !important;
+-}
+-
+-.filter-button.active {
+-  color: #f7a69a;
+-}
+-
+-.filter-button:hover {
+-  color: #f7a69a;
+-}
+\ No newline at end of file
+Index: src/components/Stats/StatusBadge.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatusBadge.css b/src/components/Stats/StatusBadge.css
+deleted file mode 100644
+--- a/src/components/Stats/StatusBadge.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,21 +0,0 @@
+-.status-badge.repondu {
+-  background-color: #689752;
+-  color: white;
+-  border: none;
+-  cursor: pointer;
+-  padding: 1vh 2vw;
+-  border-radius: 30px;
+-}
+-
+-.status-badge.repondu:hover {
+-  background-color: #3a6723;
+-  color: #989898;
+-}
+-
+-.status-badge.en-attente {
+-  color: #C09D68;
+-}
+-
+-.status-badge.ferme {
+-  color: #493c3c;
+-}
+\ No newline at end of file
+Index: src/pages/StatisticPage.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/StatisticPage.tsx b/src/pages/StatisticPage.tsx
+deleted file mode 100644
+--- a/src/pages/StatisticPage.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,209 +0,0 @@
+-// import React, { useState } from 'react';
+-// import HeaderData from '../components/Stats/HeaderData';
+-// import StatsGraph from '../components/Stats/StatsGraph';
+-// import StatsDetails from '../components/Stats/StatsDetails';
+-// import './StatisticPage.css';
+-
+-// const StatisticPage: React.FC = () => {
+-//   const [filter, setFilter] = useState('SEMAINE');
+-//   const [periodType, setPeriodType] = useState('SEMAINE');
+-
+-//   const handleFilterChange = (selectedFilter: string) => {
+-//     setFilter(selectedFilter);
+-//   };
+-
+-//   const handlePeriodTypeChange = (type: string) => {
+-//     setPeriodType(type);
+-//   };
+-
+-//   const getData = (filter: string) => {
+-//     switch (filter) {
+-//       case 'JOUR':
+-//         return {
+-//           graphData: {
+-//             labels: ['LUNDI', 'MARDI', 'MERCREDI', 'JEUDI', 'VENDREDI'],
+-//             values: [5, 6000, 14000],
+-//           },
+-//           detailsData: {
+-//             joueurs: 625,
+-//             parties: 625,
+-//             heuresDeJeu: 625,
+-//           },
+-//         };
+-//       case 'SEMAINE':
+-//         return {
+-//           graphData: {
+-//             labels: ['SEM 1', 'SEM 2', 'SEM 3', 'SEM 4'],
+-//             values: [12000, 2000, 10000],
+-//           },
+-//           detailsData: {
+-//             joueurs: 4500,
+-//             parties: 4500,
+-//             heuresDeJeu: 4500,
+-//           },
+-//         };
+-//       case 'MOIS':
+-//         return {
+-//           graphData: {
+-//             labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+-//             values: [10000, 16000, 1000],
+-//           },
+-//           detailsData: {
+-//             joueurs: 18000,
+-//             parties: 18000,
+-//             heuresDeJeu: 18000,
+-//           },
+-//         };
+-//       case 'fevrier':
+-//         return {
+-//           graphData: {
+-//             labels: ['1 FEV', '15 FEV', '28 FEV'],
+-//             values: [10000, 15000, 20000],
+-//           },
+-//           detailsData: {
+-//             joueurs: 25000,
+-//             parties: 25000,
+-//             heuresDeJeu: 25000,
+-//           },
+-//         };
+-//       case 'decembre':
+-//         return {
+-//           graphData: {
+-//             labels: ['1 DEC', '15 DEC', '31 DEC'],
+-//             values: [5000, 10000, 15000],
+-//           },
+-//           detailsData: {
+-//             joueurs: 30000,
+-//             parties: 30000,
+-//             heuresDeJeu: 30000,
+-//           },
+-//         };
+-//       default:
+-//         return {
+-//           graphData: {
+-//             labels: [],
+-//             values: [],
+-//           },
+-//           detailsData: {
+-//             joueurs: 0,
+-//             parties: 0,
+-//             heuresDeJeu: 0,
+-//           },
+-//         };
+-//     }
+-//   };
+-
+-//   const data = getData(filter);
+-
+-//   return (
+-//     <div className="statistic-container">
+-//       <HeaderData onFilterChange={handleFilterChange} onPeriodTypeChange={handlePeriodTypeChange} />
+-//       <div className="statistic-content">
+-//         <StatsGraph data={data.graphData} periodType={periodType} />
+-//         <StatsDetails data={data.detailsData} />
+-//       </div>
+-//     </div>
+-//   );
+-// };
+-
+-// export default StatisticPage;
+-
+-import React, { useState, useEffect } from 'react';
+-import HeaderData from '../components/Stats/HeaderData';
+-import StatsGraph from '../components/Stats/StatsGraph';
+-import StatsDetails from '../components/Stats/StatsDetails';
+-import './StatisticPage.css';
+-
+-interface GraphData {
+-  labels: string[];
+-  values: number[];
+-}
+-
+-interface DetailsData {
+-  joueurs: number;
+-  parties: number;
+-  heuresDeJeu: number;
+-}
+-
+-const StatisticPage: React.FC = () => {
+-  const [filter, setFilter] = useState('SEMAINE');
+-  const [periodType, setPeriodType] = useState('SEMAINE');
+-  const [graphData, setGraphData] = useState<GraphData>({ labels: [], values: [] });
+-  const [detailsData, setDetailsData] = useState<DetailsData>({ joueurs: 0, parties: 0, heuresDeJeu: 0 });
+-  const [loading, setLoading] = useState<boolean>(false);
+-
+-  const handleFilterChange = (selectedFilter: string) => {
+-    setFilter(selectedFilter);
+-  };
+-
+-  const handlePeriodTypeChange = (type: string) => {
+-    setPeriodType(type);
+-  };
+-
+-  useEffect(() => {
+-    const fetchData = async () => {
+-      setLoading(true);
+-      try {
+-        let graphResponse, detailsResponse;
+-
+-        switch (filter) {
+-          case 'JOUR':
+-            graphResponse = await fetch('https://www.wanderlab.fr/api/getNumberParty');
+-            detailsResponse = await fetch('https://www.wanderlab.fr/api/getUserId');
+-            break;
+-          case 'SEMAINE':
+-            graphResponse = await fetch('https://www.wanderlab.fr/api/getNumberParty');
+-            detailsResponse = await fetch('https://www.wanderlab.fr/api/getUserId');
+-            break;
+-          case 'MOIS':
+-            graphResponse = await fetch('https://www.wanderlab.fr/api/gethostlist');
+-            detailsResponse = await fetch('https://www.wanderlab.fr/api/getUserId');
+-            break;
+-          default:
+-            graphResponse = null;
+-            detailsResponse = null;
+-        }
+-
+-        if (graphResponse && detailsResponse) {
+-          const graphDataJson = await graphResponse.json();
+-          const detailsDataJson = await detailsResponse.json();
+-
+-          setGraphData({
+-            labels: graphDataJson.labels || [],
+-            values: graphDataJson.values || [],
+-          });
+-
+-          setDetailsData({
+-            joueurs: detailsDataJson.joueurs || 0,
+-            parties: detailsDataJson.parties || 0,
+-            heuresDeJeu: detailsDataJson.heuresDeJeu || 0,
+-          });
+-        }
+-      } catch (error) {
+-        console.error('Erreur lors de la récupération des données:', error);
+-      } finally {
+-        setLoading(false);
+-      }
+-    };
+-
+-    fetchData();
+-  }, [filter]);
+-
+-  return (
+-    <div className="statistic-container">
+-      <HeaderData onFilterChange={handleFilterChange} onPeriodTypeChange={handlePeriodTypeChange} />
+-      <div className="statistic-content">
+-        {loading ? (
+-          <p>Chargement des données...</p>
+-        ) : (
+-          <>
+-            <StatsGraph data={graphData} periodType={periodType} />
+-            <StatsDetails data={detailsData} />
+-          </>
+-        )}
+-      </div>
+-    </div>
+-  );
+-};
+-
+-export default StatisticPage;
+\ No newline at end of file
+Index: src/pages/TicketsPage.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/TicketsPage.css b/src/pages/TicketsPage.css
+deleted file mode 100644
+--- a/src/pages/TicketsPage.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,130 +0,0 @@
+-/* Ticket en cour */
+-
+-.tickets-page-container {
+-  display: flex;
+-  justify-content: center;
+-  align-items: flex-start;
+-  margin-top: 200px;
+-}
+-
+-/* Création nouveau ticket  */
+-
+-.creation-ticket-container {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  width: 100vw;
+-  padding: 2vh 2vw;
+-}
+-
+-.modal-overlay {
+-  position: fixed;
+-  top: 0;
+-  left: 0;
+-  right: 0;
+-  bottom: 0;
+-  background-color: rgba(44, 51, 61, 0.67);
+-  display: flex;
+-  justify-content: center;
+-  align-items: center;
+-  z-index: 1000;
+-}
+-
+-.modal-content {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  max-height: 90vh;
+-  max-width: 90vw;
+-  padding: 2vh 2vw;
+-}
+-
+-.close-button {
+-  background-color: transparent;
+-  border: none;
+-  color: #ffffff;
+-  position: absolute;
+-  top: 3rem;
+-  right: 28vw;
+-}
+-
+-.input-titre {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  width: 100%;
+-  border-radius: 40px;
+-  margin-top: 3vh;
+-}
+-
+-.input-text {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  width: 100%;
+-  margin-top: 5vh;
+-}
+-
+-.PJ {
+-  display: flex;
+-  align-items: center;
+-  justify-content: flex-start;
+-  width: 100%;
+-  margin-top: 3vh;
+-  margin-left: 30vh;
+-}
+-
+-.file {
+-  margin-left: 2vw;
+-}
+-
+-.file-info {
+-  width: 40%;
+-  text-align: left;
+-  margin-left: 1vw;
+-  color: rgb(41, 127, 181);
+-  white-space: nowrap;
+-  overflow: hidden;
+-  text-overflow: ellipsis;
+-  margin-top: 2vh;
+-}
+-
+-.quit-send {
+-  display: flex;
+-  align-items: center;
+-  justify-content: space-between;
+-  width: 75%;
+-  margin-top: 3vh;
+-}
+-
+-.quit {
+-  background-color: transparent;
+-  border: none;
+-  color: #7C90AF;
+-}
+-
+-.send {
+-  margin-left: auto;
+-}
+-
+-@media (max-width: 768px) {
+-  .close-button {
+-    right: 0vw;
+-  }
+-
+-  .file-info {
+-    width: 25%;
+-    margin-left: 3vw;
+-    margin-top: 2vh;
+-  }
+-}
+-
+-@media (max-width: 350px) {
+-  .PJ {
+-    margin-left: 20vh;
+-  }
+-
+-  .quit-send {
+-    width: 70%;
+-  }
+-}
+\ No newline at end of file
+Index: src/components/Stats/StatsDetails.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatsDetails.tsx b/src/components/Stats/StatsDetails.tsx
+deleted file mode 100644
+--- a/src/components/Stats/StatsDetails.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,25 +0,0 @@
+-import React from 'react';
+-import './StatsDetails.css';
+-import StatContainer from './StatContainer';
+-
+-interface StatsDetailsProps {
+-  data: {
+-    joueurs: number;
+-    parties: number;
+-    heuresDeJeu: number;
+-  };
+-}
+-
+-const StatsDetails: React.FC<StatsDetailsProps> = ({ data }) => {
+-  return (
+-    <div className="details-container">
+-      <StatContainer width="70%" maxWidth="1200px" minHeight="330px" padding="20px">
+-        <div className="detail-item">JOUEURS {data.joueurs}</div>
+-        <div className="detail-item">PARTIES {data.parties}</div>
+-        <div className="detail-item">HEURES DE JEU {data.heuresDeJeu}</div>
+-      </StatContainer>
+-    </div>
+-  );
+-};
+-
+-export default StatsDetails;
+\ No newline at end of file
+Index: src/components/Stats/StatsGraph.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatsGraph.tsx b/src/components/Stats/StatsGraph.tsx
+deleted file mode 100644
+--- a/src/components/Stats/StatsGraph.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,84 +0,0 @@
+-import React, { useState } from 'react';
+-import { Line } from 'react-chartjs-2';
+-import 'chart.js/auto';
+-import './StatsGraph.css';
+-import FilterSelector from '../Filters/FilterSelector';
+-import StatContainer from './StatContainer';
+-
+-interface StatsGraphProps {
+-  data: {
+-    labels: string[];
+-    values: number[];
+-  };
+-  periodType: string;
+-}
+-
+-const StatsGraph: React.FC<StatsGraphProps> = ({ data, periodType }) => {
+-  const [specificFilter, setSpecificFilter] = useState('12');
+-
+-  const handleFilterSelect = (filter: string) => {
+-    setSpecificFilter(filter);
+-  };
+-
+-  const graphData = {
+-    labels: data.labels,
+-    datasets: [
+-      {
+-        label: `Nombre de Joueurs - ${specificFilter}`,
+-        data: data.values,
+-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+-        borderColor: '#f7a69a',
+-        borderWidth: 2,
+-        pointBackgroundColor: '#f7a69a',
+-        pointBorderColor: '#f7a69a',
+-        pointRadius: 5,
+-      },
+-    ],
+-  };
+-
+-  const options = {
+-    plugins: {
+-      legend: {
+-        display: false,
+-      },
+-      tooltip: {
+-        callbacks: {
+-          label: (context: any) => `${context.raw} Joueurs`,
+-        },
+-      },
+-    },
+-    scales: {
+-      y: {
+-        beginAtZero: true,
+-        max: 20000,
+-        ticks: {
+-          color: '#fff',
+-        },
+-        grid: {
+-          color: '#2b2b2b',
+-        },
+-      },
+-      x: {
+-        ticks: {
+-          color: '#fff',
+-        },
+-        grid: {
+-          color: '#2b2b2b',
+-        },
+-      },
+-    },
+-  };
+-
+-  return (
+-    <div className="graph-container">
+-      <StatContainer width="90%" maxWidth="1200px" minHeight="300px" padding="20px">
+-        <div className="filter-header">
+-          <FilterSelector periodType={periodType} onFilterSelect={handleFilterSelect} />
+-        </div>
+-        <Line data={graphData} options={options} />
+-      </StatContainer>
+-    </div>
+-  );
+-};
+-
+-export default StatsGraph;
+\ No newline at end of file
+Index: src/components/Buttons/Button.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Buttons/Button.tsx b/src/components/Buttons/Button.tsx
+deleted file mode 100644
+--- a/src/components/Buttons/Button.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,20 +0,0 @@
+-import React from 'react';
+-import './SubmitButton.css';
+-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+-import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+-
+-interface SubmitButtonProps {
+-  onClick?: () => void;
+-  icon?: IconDefinition;
+-}
+-
+-const Button: React.FC<SubmitButtonProps> = ({ onClick, icon = faArrowRight }) => {
+-  return (
+-    <button type="button" className="rond-button" onClick={onClick}>
+-      <FontAwesomeIcon icon={icon} />
+-    </button>
+-  );
+-};
+-
+-export default Button;
+\ No newline at end of file
+Index: src/components/Navbar.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Navbar.css b/src/components/Navbar.css
+deleted file mode 100644
+--- a/src/components/Navbar.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,100 +0,0 @@
+-.navbar {
+-  background-color: #343a4089 !important;
+-  color: #ffffff;
+-  font-weight: bold;
+-  padding: 10px;
+-}
+-
+-.navbar-logo {
+-  border: none;
+-  background: none;
+-  cursor: pointer;
+-  display: flex;
+-  align-items: center;
+-}
+-
+-.navbar-logo img {
+-  width: 70px;
+-  height: auto;
+-}
+-
+-.navbar-brand {
+-  font-size: 1.5rem !important;
+-  color: #ffffff !important;
+-  text-decoration: underline !important;
+-  padding: 10px;
+-  margin-left: 10px;
+-  white-space: nowrap;
+-}
+-
+-.navbar-toggler {
+-  border: none;
+-  margin-right: 20px;
+-}
+-
+-.navbar-nav {
+-  display: flex;
+-  justify-content: flex-end;
+-  flex-direction: row !important;
+-  gap: 30px;
+-}
+-
+-.nav-item {
+-  text-align: right;
+-}
+-
+-.rien {
+-  background-color: transparent !important;
+-}
+-
+-.nav-link {
+-  color: #ffffff !important;
+-  transition: color 0.3s;
+-  cursor: pointer;
+-  padding-right: 15px;
+-}
+-
+-.rien2 {
+-  color: transparent !important;
+-}
+-
+-.nav-link:hover {
+-  color: #cccccc !important;
+-}
+-
+-.nav-link.active {
+-  border-bottom: 1px solid #ffffff !important;
+-  padding-bottom: 1px;
+-}
+-
+-@media (max-width: 992px) {
+-  .navbar-logo img {
+-    width: 50px;
+-  }
+-
+-  .navbar-brand {
+-    font-size: 1rem !important;
+-    margin-left: 5px;
+-  }
+-
+-  .navbar-nav {
+-    justify-content: flex-end;
+-    flex-direction: row !important;
+-    gap: 10px;
+-  }
+-
+-  .nav-link {
+-    padding: 10px;
+-  }
+-}
+-
+-@media (max-width: 368px) {
+-  .navbar-brand {
+-    font-size: 0.8rem !important;
+-    margin-left: 5px;
+-  }
+-
+-  .navbar-logo img {
+-    width: 50px;
+-  }
+-}
+\ No newline at end of file
+Index: src/components/Stats/StatContainer.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/StatContainer.tsx b/src/components/Stats/StatContainer.tsx
+deleted file mode 100644
+--- a/src/components/Stats/StatContainer.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,46 +0,0 @@
+-import React from 'react';
+-import './StatContainer.css';
+-
+-interface StatContainerProps {
+-  children: React.ReactNode;
+-  width?: string;
+-  height?: string;
+-  maxWidth?: string;
+-  maxHeight?: string;
+-  minWidth?: string;
+-  minHeight?: string;
+-  padding?: string;
+-  margin?: string;
+-}
+-
+-const StatContainer: React.FC<StatContainerProps> = ({
+-  children,
+-  width = '100%',
+-  height = 'auto',
+-  maxWidth = '95vw',
+-  maxHeight = '95vh',
+-  minWidth = '200px',
+-  minHeight = '200px',
+-  padding = '20px',
+-  margin = '0 auto'
+-}) => {
+-  return (
+-    <div
+-      className="stat-container"
+-      style={{
+-        width,
+-        height,
+-        maxWidth,
+-        maxHeight,
+-        minWidth,
+-        minHeight,
+-        padding,
+-        margin,
+-      }}
+-    >
+-      {children}
+-    </div>
+-  );
+-};
+-
+-export default StatContainer;
+\ No newline at end of file
+Index: src/components/Tickets/TicketInput.tsx
+===================================================================
+diff --git a/src/components/Tickets/TicketInput.tsx b/src/components/Tickets/TicketInput.tsx
+deleted file mode 100644
+--- a/src/components/Tickets/TicketInput.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,26 +0,0 @@
+-import React from 'react';
+-import './TicketInput.css';
+-
+-interface TicketInputProps {
+-  type: string;
+-  placeholder: string;
+-  width?: string;
+-  height?: string;
+-  value: string;
+-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+-}
+-
+-const TicketInput: React.FC<TicketInputProps> = ({ type, placeholder, width, height, value, onChange }) => {
+-  return (
+-    <input
+-      type={type}
+-      placeholder={placeholder}
+-      className="ticket-input"
+-      style={{ width, height }}
+-      value={value}
+-      onChange={onChange}
+-    />
+-  );
+-};
+-
+-export default TicketInput;
+Index: src/components/Texts/TextAreaComponent.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Texts/TextAreaComponent.tsx b/src/components/Texts/TextAreaComponent.tsx
+deleted file mode 100644
+--- a/src/components/Texts/TextAreaComponent.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,24 +0,0 @@
+-import React from 'react';
+-import './TextAreaComponent.css';
+-
+-interface TextAreaComponentProps {
+-  placeholder: string;
+-  width?: string;
+-  height?: string;
+-  value: string;
+-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+-}
+-
+-const TextAreaComponent: React.FC<TextAreaComponentProps> = ({ placeholder, width, height, value, onChange }) => {
+-  return (
+-    <textarea
+-      value={value}
+-      onChange={onChange}
+-      className="textarea"
+-      placeholder={placeholder}
+-      style={{ width, height }}
+-    />
+-  );
+-};
+-
+-export default TextAreaComponent;
+\ No newline at end of file
+Index: src/components/Tickets/TicketContainer.tsx
+===================================================================
+diff --git a/src/components/Tickets/TicketContainer.tsx b/src/components/Tickets/TicketContainer.tsx
+deleted file mode 100644
+--- a/src/components/Tickets/TicketContainer.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,18 +0,0 @@
+-import React from 'react';
+-import './TicketContainer.css';
+-
+-interface TicketContainerProps {
+-  children: React.ReactNode;
+-  width?: string;
+-  height?: string;
+-}
+-
+-const TicketContainer: React.FC<TicketContainerProps> = ({ children, width, height }) => {
+-  return (
+-    <div className="ticket-container" style={{ width, height }}>
+-      {children}
+-    </div>
+-  );
+-};
+-
+-export default TicketContainer;
+\ No newline at end of file
+Index: src/components/Buttons/SubmitButton.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Buttons/SubmitButton.tsx b/src/components/Buttons/SubmitButton.tsx
+deleted file mode 100644
+--- a/src/components/Buttons/SubmitButton.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,25 +0,0 @@
+-import React from 'react';
+-import './SubmitButton.css';
+-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+-import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+-
+-interface SubmitButtonProps {
+-  icon?: IconDefinition;
+-  onClick?: () => void;
+-  disabled?: boolean;
+-}
+-
+-const SubmitButton: React.FC<SubmitButtonProps> = ({ icon = faArrowRight, onClick , disabled = false }) => {
+-  return (
+-    <button
+-      className="rond-button"
+-      onClick={onClick}
+-      disabled={disabled}
+-    >
+-      <FontAwesomeIcon icon={icon} />
+-    </button>
+-  );
+-};
+-
+-export default SubmitButton;
+\ No newline at end of file
+Index: src/components/Buttons/SubmitButton.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Buttons/SubmitButton.css b/src/components/Buttons/SubmitButton.css
+deleted file mode 100644
+--- a/src/components/Buttons/SubmitButton.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,16 +0,0 @@
+-.rond-button {
+-  width: 55px;
+-  padding: 10px;
+-  border: none;
+-  border-radius: 15px;
+-  background-color: #7C90AF;
+-  color: #D9D9D9;
+-  cursor: pointer;
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-}
+-
+-.rond-button:hover {
+-  background-color: #5E81AC;
+-}
+\ No newline at end of file
+Index: src/components/Login/LoginInput.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Login/LoginInput.css b/src/components/Login/LoginInput.css
+deleted file mode 100644
+--- a/src/components/Login/LoginInput.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,12 +0,0 @@
+-.login-input {
+-  padding: 10px;
+-  border: none;
+-  border-radius: 20px;
+-  background-color: #4C566A;
+-  color: #D8DEE9;
+-  font-size: 16px;
+-}
+-
+-.login-input::placeholder {
+-  color: #adadad;
+-}
+\ No newline at end of file
+Index: src/components/Login/LoginInput.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Login/LoginInput.tsx b/src/components/Login/LoginInput.tsx
+deleted file mode 100644
+--- a/src/components/Login/LoginInput.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,49 +0,0 @@
+-// import React from 'react';
+-// import './LoginInput.css';
+-
+-// interface LoginInputProps {
+-//   type: string;
+-//   placeholder: string;
+-//   width?: string;
+-//   height?: string;
+-// }
+-
+-// const LoginInput: React.FC<LoginInputProps> = ({ type, placeholder, width, height }) => {
+-//   return (
+-//     <input
+-//       type={type}
+-//       placeholder={placeholder}
+-//       className="login-input"
+-//       style={{ width, height }}
+-//     />
+-//   );
+-// };
+-
+-// export default LoginInput;
+-
+-import React, { ChangeEvent } from 'react';
+-import './LoginInput.css';
+-
+-interface LoginInputProps {
+-  type: string;
+-  placeholder: string;
+-  width?: string;
+-  height?: string;
+-  value: string;
+-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+-}
+-
+-const LoginInput: React.FC<LoginInputProps> = ({ type, placeholder, width, height, value, onChange }) => {
+-  return (
+-    <input
+-      type={type}
+-      placeholder={placeholder}
+-      className="login-input"
+-      style={{ width, height }}
+-      value={value}
+-      onChange={onChange}
+-    />
+-  );
+-};
+-
+-export default LoginInput;
+Index: src/pages/AdminLoginPage.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/AdminLoginPage.css b/src/pages/AdminLoginPage.css
+deleted file mode 100644
+--- a/src/pages/AdminLoginPage.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,97 +0,0 @@
+-.page-container {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  height: 100vh;
+-  width: 100vw;
+-  padding: 2vh 2vw;
+-  margin-top: 15vh;
+-}
+-
+-.title-container {
+-  margin-bottom: 1vh;
+-  width: 100%;
+-  text-align: center;
+-}
+-
+-.login-form {
+-  width: 100%;
+-  max-width: 400px;
+-}
+-
+-.input-title {
+-  display: flex;
+-  align-items: center;
+-  justify-content: flex-start;
+-  margin-bottom: 1vh;
+-  margin-left: 6vh;
+-}
+-
+-.input-group {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  margin-bottom: 1.5vh;
+-  width: 100%;
+-}
+-
+-.icon {
+-  color: rgba(232, 163, 130, 1);
+-  margin-right: 1vh;
+-    /* background: linear-gradient(to right, 
+-  rgba(232, 163, 130, 1) 0%,
+-  rgba(254, 226, 214, 1) 52%,
+-  rgba(232, 163, 130, 1) 100%);
+-  background-clip: text;
+-  -webkit-background-clip: text;
+-  color: transparent;
+-  -webkit-text-fill-color: transparent; */
+-}
+-
+-.access {
+-  margin-left: 30vh;
+-  margin-top: 3vh;
+-}
+-
+-.error-log {
+-  color: #da2323;
+-  display: flex;
+-  align-items: center;
+-  justify-content: center; 
+-  margin-top: -9px;
+-  white-space: pre-line;
+-}
+-
+-@media (max-width: 576px) {
+-  .input-title {
+-    margin-left: 15%;
+-  }
+-
+-  .login-form {
+-    padding: 5px;
+-  }
+-}
+-
+-@media (min-width: 576px) and (max-width: 768px) {
+-  .input-title {
+-    margin-left: 15%;
+-  }
+-
+-  .login-form {
+-    padding: 10px;
+-  }
+-}
+-
+-@media (min-width: 768px) and (max-width: 992px) {
+-  .input-title {
+-    margin-left: 15%;
+-  }
+-
+-  .login-form {
+-    padding: 12px;
+-  }
+-
+-  .access {
+-    margin-left: 20vh;
+-  }
+-}
+\ No newline at end of file
+Index: src/pages/AdminLoginPage.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/AdminLoginPage.tsx b/src/pages/AdminLoginPage.tsx
+deleted file mode 100644
+--- a/src/pages/AdminLoginPage.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,86 +0,0 @@
+-import React, { useState } from 'react';
+-import './AdminLoginPage.css';
+-import TitleText from '../components/Texts/TitleText';
+-import IdenticalText from '../components/Texts/IdenticalText';
+-import LoginContainer from '../components/Login/LoginContainer';
+-import LoginInput from '../components/Login/LoginInput';
+-import SubmitButton from '../components/Buttons/SubmitButton';
+-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+-import { faUser, faLock, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+-import { useNavigate } from 'react-router-dom';
+-
+-const AdminLoginPage: React.FC = () => {
+-  const [username, setUsername] = useState<string>('');
+-  const [password, setPassword] = useState<string>('');
+-  const [error, setError] = useState<string>('');
+-  const navigate = useNavigate();
+-
+-  const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+-    setUsername(e.target.value);
+-  };
+-
+-  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+-    setPassword(e.target.value);
+-  };
+-
+-  const handleSubmit = async (e: React.FormEvent) => {
+-    e.preventDefault();
+-    if (!username || !password) {
+-      setError('Utilisateur et mot de passe sont requis.');
+-      return;
+-    }
+-
+-    try {
+-      const response = await fetch('https://www.wanderlab.fr/api/post/admin/connection', {
+-        method: 'POST',
+-        headers: {
+-          'Content-Type': 'application/json',
+-        },
+-        body: JSON.stringify({ identification:username, password }),
+-      });
+-
+-      if (response.ok) {
+-        const data = await response.json();
+-        sessionStorage.setItem('token', data.token);
+-        navigate('/admin/home');
+-      } else {
+-        setError('Nom d’utilisateur ou mot de passe incorrect.');
+-      }
+-    } catch (error) {
+-      console.error('Error:', error);
+-      setError('Une erreur est survenue lors de la connexion.\nVeuillez réessayer plus tard.');
+-    }
+-  };
+-
+-  return (
+-    <div className="page-container">
+-      <LoginContainer width="400px" height="350px">
+-        <div className="title-container">
+-          <TitleText text="CONNEXION" />
+-        </div>
+-        <form className="login-form" onSubmit={handleSubmit}>
+-          <div className="input-title">
+-            <FontAwesomeIcon icon={faUser} className="icon" />
+-            <IdenticalText text="Utilisateur" color="#FBF8ED" />
+-          </div>
+-          <div className="input-group">
+-            <LoginInput type="text" placeholder="Utilisateur" width="70%" height="40px" value={username} onChange={handleUsernameChange} />
+-          </div>
+-          <div className="input-title">
+-            <FontAwesomeIcon icon={faLock} className="icon" />
+-            <IdenticalText text="Mot de passe" color="#FBF8ED" />
+-          </div>
+-          <div className="input-group">
+-            <LoginInput type="password" placeholder="Mot de passe" width="70%" height="40px" value={password} onChange={handlePasswordChange} />
+-          </div>
+-          {error && <p className="error-log">{error}</p>}
+-          <div className="access">
+-            <SubmitButton icon={faArrowRight} />
+-          </div>
+-        </form>
+-      </LoginContainer>
+-    </div>
+-  );
+-};
+-
+-export default AdminLoginPage;
+\ No newline at end of file
+Index: src/components/Filters/Filters.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Filters/Filters.tsx b/src/components/Filters/Filters.tsx
+deleted file mode 100644
+--- a/src/components/Filters/Filters.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,27 +0,0 @@
+-import React from 'react';
+-import './Filters.css';
+-
+-interface FiltersProps {
+-  onCreateTicketClick: () => void;
+-}
+-
+-const Filters: React.FC<FiltersProps> = ({ onCreateTicketClick }) => {
+-  return (
+-    <div className="filters d-flex justify-content-center align-items-center px-2">
+-      <div className="filter-container d-flex justify-content-center flex-grow-1">
+-        <button className="filter btn btn-sm btn-outline-secondary mx-1">TOUT</button>
+-        <button className="filter btn btn-sm btn-outline-secondary mx-1">RÉPONDU</button>
+-        <button className="filter btn btn-sm btn-outline-secondary mx-1">EN ATTENTE</button>
+-        <button className="filter btn btn-sm btn-outline-secondary mx-1">FERMÉ</button>
+-      </div>
+-      <button
+-        className="create-ticket-button btn btn-sm btn-primary ml-auto"
+-        onClick={onCreateTicketClick}
+-      >
+-        CRÉER TICKET +
+-      </button>
+-    </div>
+-  );
+-};
+-
+-export default Filters;
+\ No newline at end of file
+Index: src/components/Texts/TitleText.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Texts/TitleText.css b/src/components/Texts/TitleText.css
+deleted file mode 100644
+--- a/src/components/Texts/TitleText.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,12 +0,0 @@
+-.login-title {
+-  color: rgba(232, 163, 130, 1);
+-
+-  /* background: linear-gradient(to right, 
+-  rgba(232, 163, 130, 1) 0%,
+-  rgba(254, 226, 214, 1) 52%,
+-  rgba(232, 163, 130, 1) 100%);
+-  background-clip: text;
+-  -webkit-background-clip: text;
+-  color: transparent;
+-  -webkit-text-fill-color: transparent; */
+-}
+\ No newline at end of file
+Index: src/components/Texts/TitleText.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Texts/TitleText.tsx b/src/components/Texts/TitleText.tsx
+deleted file mode 100644
+--- a/src/components/Texts/TitleText.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,16 +0,0 @@
+-import React, { CSSProperties } from 'react';
+-import './TitleText.css';
+-
+-interface TitleTextProps {
+-  text: string;
+-  style?: CSSProperties;
+-  color?: string;
+-}
+-
+-const TitleText: React.FC<TitleTextProps> = ({ text, style, color }) => {
+-  return (
+-    <h2 className="login-title" style={style}>{text}</h2>
+-  );
+-};
+-
+-export default TitleText;
+\ No newline at end of file
+Index: src/components/Stats/HeaderData.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/HeaderData.css b/src/components/Stats/HeaderData.css
+deleted file mode 100644
+--- a/src/components/Stats/HeaderData.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,8 +0,0 @@
+-.header-data-container {
+-  display: flex;
+-  justify-content: center;
+-  align-items: center;
+-  background-color: #27313E;
+-  padding: 10px 0;
+-  margin: 15px;
+-}
+\ No newline at end of file
+Index: src/components/Filters/Filters.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Filters/Filters.css b/src/components/Filters/Filters.css
+deleted file mode 100644
+--- a/src/components/Filters/Filters.css	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,60 +0,0 @@
+-.filters {
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  padding: 10px;
+-  width: 100%;
+-}
+-
+-.filter-container {
+-  display: flex;
+-  justify-content: center;
+-  flex-grow: 1;
+-  position: relative;
+-}
+-
+-.filter {
+-  font-weight: bold !important;
+-  transition: color 0.3s ease !important;
+-  color: #7C90AF !important;
+-  border: none !important;
+-  background-color: transparent !important;
+-  font-size: 18px !important;
+-  padding: 1vh 2.5vw;
+-}
+-
+-.filter:hover,
+-.filter:focus,
+-.create-ticket-button:hover {
+-  color: rgba(232, 163, 130, 1) !important;
+-    /* background: linear-gradient(to right, 
+-  rgba(232, 163, 130, 1) 0%,
+-  rgba(254, 226, 214, 1) 52%,
+-  rgba(232, 163, 130, 1) 100%);
+-  background-clip: text;
+-  -webkit-background-clip: text;
+-  color: transparent;
+-  -webkit-text-fill-color: transparent; */
+-}
+-
+-.create-ticket-button {
+-  background-color: #7c90af !important;
+-  border: none !important;
+-  border-radius: 50px !important;
+-  font-weight: bold !important;
+-  transition: background-color 0.3s ease, color 0.3s ease !important;
+-  font-size: 18px !important;
+-  margin-top: -10px;
+-}
+-
+-@media (max-width: 400px) {
+-  .filter {
+-    font-size: 10px !important;
+-    padding: 5px !important;
+-  }
+-
+-  .create-ticket-button {
+-    padding: 5px 10px !important;
+-    font-size: 10px !important;
+-  }
+-}
+\ No newline at end of file
+Index: src/components/Stats/HeaderData.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Stats/HeaderData.tsx b/src/components/Stats/HeaderData.tsx
+deleted file mode 100644
+--- a/src/components/Stats/HeaderData.tsx	(revision 09262dc41991176255c01398b10d40bbc49b5043)
++++ /dev/null	(revision 09262dc41991176255c01398b10d40bbc49b5043)
+@@ -1,46 +0,0 @@
+-import React, { useState } from 'react';
+-import FilterButton from '../Buttons/FilterButton';
+-
+-import './HeaderData.css';
+-
+-interface HeaderDataProps {
+-  onFilterChange: (filter: string) => void;
+-  onPeriodTypeChange: (type: string) => void;
+-}
+-
+-const HeaderData: React.FC<HeaderDataProps> = ({ onFilterChange, onPeriodTypeChange }) => {
+-  const [activeFilter, setActiveFilter] = useState('SEMAINE');
+-
+-  const handleFilterClick = (filter: string) => {
+-    setActiveFilter(filter);
+-    onFilterChange(filter);
+-    onPeriodTypeChange(filter);
+-  };
+-
+-  return (
+-    <div className="header-data-container">
+-      <FilterButton
+-        label="JOUR"
+-        isActive={activeFilter === 'JOUR'}
+-        onClick={() => handleFilterClick('JOUR')}
+-      />
+-      <FilterButton
+-        label="SEMAINE"
+-        isActive={activeFilter === 'SEMAINE'}
+-        onClick={() => handleFilterClick('SEMAINE')}
+-      />
+-      <FilterButton
+-        label="MOIS"
+-        isActive={activeFilter === 'MOIS'}
+-        onClick={() => handleFilterClick('MOIS')}
+-      />
+-      {/* <FilterButton
+-        label="ANNEE"
+-        isActive={activeFilter === 'ANNEE'}
+-        onClick={() => handleFilterClick('ANNEE')}
+-      /> */}
+-    </div>
+-  );
+-};
+-
+-export default HeaderData;
+\ No newline at end of file

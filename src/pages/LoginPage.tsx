@@ -1,22 +1,27 @@
-import React, { useState } from "react";
+import React, {useContext, useState} from "react";
 import { TextField, Button, Link } from "@mui/material";
+import {useAuth} from "../context/AuthProvider";
 
 const LoginPage: React.FC = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
+    const { login } = useAuth()
 
-
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!email || !password) {
             setError("Veuillez remplir tous les champs");
         } else {
-            setError("");
-            console.log("Connexion réussie");
+            try {
+                setError("");
+                await login(email, password);
+                console.log("Connexion réussie");
+            } catch (err) {
+                setError("Échec de la connexion. Vérifiez vos informations.");
+            }
         }
-
     };
 
     return (
@@ -25,10 +30,10 @@ const LoginPage: React.FC = () => {
                 <h1 className="text-3xl text-transparent bg-clip-text bg-nav-gradient font-bold mb-6 text-center">CONNEXION</h1>
                 <form onSubmit={handleLogin} className="flex flex-col gap-4">
                     <TextField
-                        label="Email"
+                        label="Email / Username"
                         variant="outlined"
                         fullWidth
-                        type="email"
+                        type="text"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -82,7 +87,9 @@ const LoginPage: React.FC = () => {
                     />
                     {error && <p className="text-red-500 text-center">{error}</p>}
                     <Button
-                        className={"inline-block bg-nav-gradient text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold"}>
+                        className={"inline-block bg-nav-gradient text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold"}
+                        type="submit"
+                    >
                         <h3 className={"text-blue-background"}>
                             SE CONNECTER
                         </h3>

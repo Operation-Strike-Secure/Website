@@ -62,7 +62,7 @@ const TicketsPage: React.FC = () => {
     const [isCreatingTicket, setIsCreatingTicket] = useState(false);
     const [selectedTicket, setSelectedTicket] = useState<any>(null);
     const [page, setPage] = useState(0);
-    const [rowsPerPage, setRowsPerPage] = useState(6);
+    const [rowsPerPage, setRowsPerPage] = useState(5);
 
     const handleChangePage = (event: unknown, newPage: number) => {
         setPage(newPage);

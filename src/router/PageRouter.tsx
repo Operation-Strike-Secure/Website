@@ -12,14 +12,15 @@ import LoginPage from '../pages/LoginPage';
 import RegisterPage from '../pages/RegisterPage';
 import DownloadPage from '../pages/DownloadPage';
 import TicketsPage from "../pages/TicketsPage";
+import ProtectedRouteLoggedUser from "./ProtectedRouteLoggedUser";
 
 const PageRouter: React.FC = () => {
   return (
     <Routes>
       {/* Routes publiques */}
       <Route path="/" element={<HomePage />} />
-      <Route path="/register" element={<RegisterPage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<ProtectedRouteLoggedUser element={<RegisterPage />} />} />
+      <Route path="/login" element={<ProtectedRouteLoggedUser element={<LoginPage />} />} />
       <Route path="/statistics" element={<StatsPage />} />
       <Route path="/download" element={<DownloadPage />} />
 

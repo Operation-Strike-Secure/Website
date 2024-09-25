@@ -11,12 +11,7 @@ import {Icon} from "@mui/material";
 export const MyNavbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-  // const { isAuthenticated, isAdmin, logout } = useAuth();
-    const isAuthenticated = true;
-    const isAdmin = true;
-    const logout = () => {
-        console.log("logout")
-    }
+  const { isAuthenticated, isAdmin, logout } = useAuth();
 
   const handleHomeClick = () => {
     navigate("/");

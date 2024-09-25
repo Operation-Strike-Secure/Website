@@ -42,6 +42,14 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
   // Fonction pour valider le token auprès du backend
   const validateToken = async (token: string) => {
+
+    // temporaire pour tester le front sans le back
+    setIsAuthenticated(true);
+    setIsAdmin(false);
+    setLoading(false);
+    return;
+
+    /*
     try {
       setLoading(true);
       const response = await fetch(`${API_URL}${process.env.REACT_APP_API_VALIDATE_TOKEN_ENDPOINT}`, {
@@ -65,10 +73,19 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     } finally {
       setLoading(false);
     }
+
+     */
   };
 
   // Fonction de login avec une requête au backend
   const handleLogin = async (email: string, password: string) => {
+    // temporaire pour tester le front sans le back
+    localStorage.setItem("token", "blabla");
+    setIsAuthenticated(true);
+    setIsAdmin(false);
+    return;
+
+    /*
     try {
       setLoading(true);
       setError(undefined); // Réinitialiser l'erreur
@@ -97,10 +114,19 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     } finally {
       setLoading(false);
     }
+     */
   };
 
   // Fonction de register (inscription) avec une requête au backend
   const handleRegister = async (name: string, email: string, password: string) => {
+
+    // temporaire pour tester le front sans le back
+    localStorage.setItem("token", "blabla");
+    setIsAuthenticated(true);
+    setIsAdmin(false);
+    return;
+
+    /*
     try {
       setLoading(true);
       setError(undefined);
@@ -129,6 +155,8 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     } finally {
       setLoading(false);
     }
+
+     */
   };
 
   // Fonction de déconnexion
